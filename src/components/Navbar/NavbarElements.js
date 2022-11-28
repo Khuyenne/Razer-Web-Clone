@@ -4,12 +4,12 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   background: #000;
-  height: 80px;
+  height: 60px;
   margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-weight: 300;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -20,11 +20,12 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
   display: flex;
-
-  height: 90px;
+  justify-content: flex-end;
+  margin: 0px 351.5px;
+  line-height: 24px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
+  padding: 0px;
   max-width: 1100px;
 `;
 export const NavLogo = styled.div`
@@ -33,8 +34,28 @@ export const NavLogo = styled.div`
   display: flex;
   align-items: center;
   margin-left: 24px;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
-export const MobileIcon = styled.div`
+export const MobileIcon1 = styled.div`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 20;
+    transform: translate(-0%, 60%);
+    font-size: 1.9rem;
+    color: #fff;
+  }
+`;
+export const MobileIcon2 = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
@@ -50,10 +71,12 @@ export const MobileIcon = styled.div`
 `;
 export const NavMenu = styled.ul`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  align-items: flex-end;
+  margin-right: -160px;
+
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -66,29 +89,18 @@ export const NavItem = styled.li`
 `;
 
 export const NavBtnLink = styled(LinkR)`
-  border-radius: 50px;
-  background: #01bf71;
   white-space: nowrap;
-  padding: 10px 22px;
-  color: #010606;
+  padding: 39px 60px 0px 0px;
+  color: #999999;
   font-size: 20px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
-  }
 `;
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  color: #999999;
+  font-family: "Alumni Sans Pinstripe";
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0px 70px 0px 0px;
   height: 100%;
   cursor: pointer;
   &.active {

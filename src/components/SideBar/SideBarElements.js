@@ -54,7 +54,7 @@ export const SidebarLink = styled(LinkS)`
   text-align: left;
   height: 50px;
   font-size: 1.2rem;
-  margin-top: 20px;
+  margin-top: 5px;
   margin-left: 20px;
   margin-bottom: 3px;
   text-decoration: none;
@@ -69,7 +69,7 @@ export const SidebarLink = styled(LinkS)`
 `;
 export const SidebarInput = styled.input`
   border-radius: 25px;
-  padding: 20px;
+  padding: 10px;
   margin-top: 35 px;
   margin-right: 20px;
   margin-left: 20px;

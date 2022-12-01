@@ -3,7 +3,7 @@ import Navbar from "../Navbar";
 import Sidebar from "../SideBar";
 import Notification from "../Notificattion";
 import Info from "../Info";
-import { homeObjOne } from "../Info/Data";
+import { homeObjOne, homeObjTwo } from "../Info/Data";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +18,7 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <Notification />
       <Info {...homeObjOne} />
+      <Info {...homeObjTwo} />
     </>
   );
 };

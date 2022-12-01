@@ -31,6 +31,9 @@ const Info = ({
     <InfoContainer lightBg={lightBg} id={id}>
       <InfoWrapper>
         <Column>
+          <ImgWrap>
+            <Img src={img} alt={alt} />
+          </ImgWrap>
           <TextWrapper>
             <TopLine>{topLine}</TopLine>
             <Heading lightText={lightText}>{headLine}</Heading>
@@ -40,9 +43,6 @@ const Info = ({
               <MdKeyboardArrowRight />
             </InfoLinks1>
             <InfoLinks2 lightText={lightText}>{informLinks2}</InfoLinks2>
-            <ImgWrap>
-              <Img src={img} alt={alt} />
-            </ImgWrap>
           </TextWrapper>
         </Column>
       </InfoWrapper>

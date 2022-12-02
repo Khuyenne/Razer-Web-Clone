@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
+// import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
-import { HiOutlineBars2 } from "react-icons/hi2";
+import { AiOutlineClose } from "react-icons/ai";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -13,12 +13,18 @@ export const SidebarContainer = styled.aside`
   align-items: center;
   top: 0;
   left: 0;
-  transition: 0.3s ease-in-out;
+
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
-export const CloseIcon = styled(HiOutlineBars2)`
+export const CloseIcon = styled(AiOutlineClose)`
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0%, 60%);
+  font-size: 2rem;
   color: #fff;
 `;
 export const Icon = styled.div`
@@ -36,7 +42,7 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(2, 70px);
   text-align: center;
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(6, 60px);
@@ -44,13 +50,16 @@ export const SidebarMenu = styled.ul`
 `;
 export const SidebarLink = styled(LinkS)`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
+  padding: 10px;
+  text-align: left;
+  height: 50px;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 3px;
   text-decoration: none;
   list-style: none;
-  transition: 02s ease-in-out;
-  text-decoration: none;
+  transition: 01s ease-in-out;
   color: #fff;
   cursor: pointer;
   &:hover {
@@ -58,25 +67,18 @@ export const SidebarLink = styled(LinkS)`
     transition: 0.2s ease-in-out;
   }
 `;
-export const SideBtnWrap = styled.div`
-  display: flex;
-  justify-content: center;
+export const SidebarInput = styled.input`
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 35 px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 17px;
 `;
-export const SidebarRoute = styled(LinkR)`
-  border-radius: 50px;
-  background: #01bf71;
-  white-space: nowrap;
-  padding: 16px 64px;
-  color: #010606;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
-  }
+
+export const Cross = styled.hr`
+  height: 0;
+  margin-top: 0px;
+  margin-right: 30px;
+  margin-left: 35px;
 `;

@@ -6,8 +6,8 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  SidebarRoute,
-  SideBtnWrap,
+  SidebarInput,
+  Cross,
 } from "./SideBarElements";
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -18,34 +18,43 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
+          <SidebarInput
+            type="text"
+            placeholder="Search razer.com"
+          ></SidebarInput>
           <SidebarLink to="pc" onClick={toggle}>
-            About
+            PC
           </SidebarLink>
+          <Cross />
           <SidebarLink to="console" onClick={toggle}>
-            Discover
+            Console
           </SidebarLink>
+          <Cross />
           <SidebarLink to="mobile" onClick={toggle}>
+            Mobile
+          </SidebarLink>
+          <Cross />
+          <SidebarLink to="lifestyle" onClick={toggle}>
+            Lifestyle
+          </SidebarLink>
+          <Cross />
+          <SidebarLink to="services" onClick={toggle}>
             Services
           </SidebarLink>
-          <SidebarLink to="lifestyle" onClick={toggle}>
-            Sign up
-          </SidebarLink>
-          <SidebarLink to="services" onClick={toggle}>
-            Sign up
-          </SidebarLink>
+          <Cross />
           <SidebarLink to="community" onClick={toggle}>
-            Sign up
+            Community
           </SidebarLink>
+          <Cross />
           <SidebarLink to="support" onClick={toggle}>
-            Sign up
+            Support
           </SidebarLink>
+          <Cross />
           <SidebarLink to="store" onClick={toggle}>
-            Sign up
+            Store
           </SidebarLink>
+          <Cross />
         </SidebarMenu>
-        <SideBtnWrap>
-          <SidebarRoute>Way a minute</SidebarRoute>
-        </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
   );

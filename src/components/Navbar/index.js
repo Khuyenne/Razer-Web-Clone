@@ -2,29 +2,33 @@ import React from "react";
 import { HiOutlineBars2 } from "react-icons/hi2";
 import { AiOutlineSearch } from "react-icons/ai";
 import { CgShoppingCart } from "react-icons/cg";
-// import razerLogo from "./logo.svg";
+
 import {
   Nav,
   NavbarContainer,
   NavLogo,
-  MobileIcon,
+  MobileIcon1,
+  MobileIcon2,
   NavMenu,
   NavItem,
   NavLinks,
   NavBtnLink,
 } from "./NavbarElements";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
-            <img src="/logo.svg" alt="logo" height={50} width={50} />
+            <img src="/logo.svg" alt="logo" height={35} width={35} />
           </NavLogo>
-          <MobileIcon>
+          <MobileIcon1 onClick={toggle}>
             <HiOutlineBars2 />
-          </MobileIcon>
+          </MobileIcon1>
+          <MobileIcon2 onClick={toggle}>
+            <CgShoppingCart />
+          </MobileIcon2>
           <NavMenu>
             <NavItem>
               <NavLinks to="pc">PC</NavLinks>

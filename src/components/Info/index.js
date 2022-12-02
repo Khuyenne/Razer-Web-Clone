@@ -1,5 +1,4 @@
 import React from "react";
-// import {img1} from '/web_clone/public/homepage.png'
 import { MdKeyboardArrowRight } from "react-icons/md";
 import {
   InfoContainer,
@@ -42,7 +41,10 @@ const Info = ({
               {informLinks1}
               <MdKeyboardArrowRight />
             </InfoLinks1>
-            <InfoLinks2 lightText={lightText}>{informLinks2}</InfoLinks2>
+            <InfoLinks2 lightText={lightText}>
+              {informLinks2}
+              <MdKeyboardArrowRight />
+            </InfoLinks2>
           </TextWrapper>
         </Column>
       </InfoWrapper>

@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
-export const InfoContainer = styled.div`
-  background-color: #696969;
-`;
-export const InfoWrapper = styled.div``;
+export const HomepageContainer = styled.div``;
+export const HPWrapper = styled.div``;
 export const Column = styled.div`
   position: relative;
   width: 100%;
@@ -45,41 +43,21 @@ export const Heading = styled.h2`
     top: 8%;
     font-size:  17px;
 `;
-export const Subtitle = styled.h2`
-  max-width: 440px;
-  margin-bottom: 35px;
-  font-size: 18px;
-  line-height: 24px;
-`;
 
-export const InfoLinks1 = styled.p`
+export const InfoLinks = styled.p`
   position: absolute;
   text-align: center;
   color: #fff;
   top: 25%;
   width: 100%;
   font-size: 18px;
-  right: 5%;
   @media screen and (max-width: 768px) {
     top: 12%;
     font-size: 16px;
 `;
-export const InfoLinks2 = styled.p`
-position: absolute;
-  text-align: center;
-  color: #fff;
-  top: 25%;
-  width: 100%;
-  font-size: 18px;
-  left:5%;
-  @media screen and (max-width: 768px) {
-    top: 12%;
-    font-size: 16px;`;
 
 export const ImgWrap = styled.div``;
 export const Img = styled.img`
-  margin-top: -70px;
-  margin-bottom: -20px;
   @media screen and (max-width: 768px) {
   }
 `;

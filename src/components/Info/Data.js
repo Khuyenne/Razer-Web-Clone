@@ -18,3 +18,13 @@ export const homeObjTwo = {
   img: "/laptop.png",
   alt: "latopgaming",
 };
+
+export const homeObjThree = {
+  id: "keyboard",
+  topLine: "razer deathstalker v2 pro tenkeyless",
+  headLine: "low-profile ergonomics. high-performance wireless",
+  informLinks1: "Learn More",
+  informLinks2: "Buy",
+  img: "/keyboard.png",
+  alt: "keyboardgaming",
+};

@@ -6,7 +6,8 @@ export const NotiContainer = styled.div`
   align-items: center;
   color: #999999;
   justify-content: center;
-  line-height: 24px;
+  line-height: 18px;
+  font-size: 15px;
 `;
 
 export const NotiAlert = styled.p`

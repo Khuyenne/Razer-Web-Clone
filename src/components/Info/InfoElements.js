@@ -1,7 +1,10 @@
 import styled from "styled-components";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 export const InfoContainer = styled.div`
   background-color: #696969;
+  width: 100%;
+  height: 100%;
 `;
 export const InfoWrapper = styled.div``;
 export const Column = styled.div`
@@ -17,12 +20,12 @@ export const TopLine = styled.h1`
   position: absolute;
   text-align: center;
   color: #fff;
-  top: 5%;
+  top: -5%;
   width: 100%;
-  font-size: 32px;
+  font-size: 47px;
   font-family: "Roboto", sans-serif;
 
-  font-weight: 800;
+  font-weight: 550;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -36,10 +39,12 @@ export const Heading = styled.h2`
   position: absolute;
   text-align: center;
   color: #fff;
-  top: 15%;
+  top: 6%;
   width: 100%;
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: 400;
   font-family: "Roboto", sans-serif;
+
   text-transform: uppercase;
   @media screen and (max-width: 768px) {
     top: 8%;
@@ -56,10 +61,11 @@ export const InfoLinks1 = styled.p`
   position: absolute;
   text-align: center;
   color: #fff;
-  top: 25%;
+  top: 12%;
   width: 100%;
-  font-size: 18px;
-  right: 5%;
+  font-size: 19px;
+  font-family: "RazerF5";
+  right: 4%;
   @media screen and (max-width: 768px) {
     top: 12%;
     font-size: 16px;
@@ -68,18 +74,25 @@ export const InfoLinks2 = styled.p`
 position: absolute;
   text-align: center;
   color: #fff;
-  top: 25%;
+  top: 12%;
   width: 100%;
-  font-size: 18px;
-  left:5%;
+  font-family: "RazerF5";
+  font-size: 19px;
+  left:4%;
   @media screen and (max-width: 768px) {
     top: 12%;
     font-size: 16px;`;
 
 export const ImgWrap = styled.div``;
 export const Img = styled.img`
+  width: 100%;
+  height: 100%;
   margin-top: -70px;
   margin-bottom: -20px;
   @media screen and (max-width: 768px) {
   }
+`;
+export const IconArrow = styled(MdKeyboardArrowRight)`
+  color: #44d62c;
+  margin-bottom: -3px;
 `;

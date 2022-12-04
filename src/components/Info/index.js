@@ -1,5 +1,5 @@
 import React from "react";
-import { MdKeyboardArrowRight } from "react-icons/md";
+
 import {
   InfoContainer,
   InfoWrapper,
@@ -12,6 +12,7 @@ import {
   InfoLinks2,
   ImgWrap,
   Img,
+  IconArrow,
 } from "./InfoElements";
 
 const Info = ({
@@ -39,11 +40,11 @@ const Info = ({
             <Subtitle lightText={lightText}>{description}</Subtitle>
             <InfoLinks1 lightText={lightText}>
               {informLinks1}
-              <MdKeyboardArrowRight />
+              <IconArrow />
             </InfoLinks1>
             <InfoLinks2 lightText={lightText}>
               {informLinks2}
-              <MdKeyboardArrowRight />
+              <IconArrow />
             </InfoLinks2>
           </TextWrapper>
         </Column>

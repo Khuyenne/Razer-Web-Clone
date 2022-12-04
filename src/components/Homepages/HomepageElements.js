@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-export const HomepageContainer = styled.div``;
+export const HomepageContainer = styled.div`
+  width: 100%;
+  height: 100%;
+`;
 export const HPWrapper = styled.div``;
 export const Column = styled.div`
   position: relative;
@@ -17,10 +20,10 @@ export const TopLine = styled.h1`
   color: #fff;
   top: 5%;
   width: 100%;
-  font-size: 32px;
+  font-size: 47px;
   font-family: "Roboto", sans-serif;
 
-  font-weight: 800;
+  font-weight: 550;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -36,8 +39,9 @@ export const Heading = styled.h2`
   color: #fff;
   top: 15%;
   width: 100%;
-  font-size: 22px;
-  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 200;
   text-transform: uppercase;
   @media screen and (max-width: 768px) {
     top: 8%;
@@ -48,16 +52,20 @@ export const InfoLinks = styled.p`
   position: absolute;
   text-align: center;
   color: #fff;
-  top: 25%;
+  top: 21%;
   width: 100%;
-  font-size: 18px;
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
   @media screen and (max-width: 768px) {
     top: 12%;
     font-size: 16px;
 `;
 
-export const ImgWrap = styled.div``;
+export const ImgWrap = styled.div`
+  height: 100%;
+`;
 export const Img = styled.img`
+  width: 100%;
   @media screen and (max-width: 768px) {
   }
 `;

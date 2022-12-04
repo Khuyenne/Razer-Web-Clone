@@ -4,7 +4,7 @@ export const homeObjOne = {
   lightText: true,
   topLine: "MAKE A GIFT OF THE UNFAIR ADVANTAGE",
   headLine: "GET A HEADSTART ON HOLIDAY SHOPPING",
-  informLinks: "Shop",
+  informLinks: "Shop Now",
   img: "/homepage.png",
   alt: "homepage",
 };

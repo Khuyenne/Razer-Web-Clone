@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
+// import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
@@ -14,6 +14,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   border-bottom: 1px solid #44d62c;
+
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -89,11 +90,14 @@ export const NavItem = styled.li`
   display: flex;
 `;
 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled.div`
   white-space: nowrap;
   padding: 39px 60px 0px 0px;
   color: #999999;
   font-size: 20px;
+  &:hover {
+    color: #fff;
+  }
 `;
 export const NavLinks = styled(LinkS)`
   color: #999999;
@@ -104,6 +108,9 @@ export const NavLinks = styled(LinkS)`
   padding: 0px 70px 0px 0px;
   height: 100%;
   cursor: pointer;
+  &:hover {
+    color: #fff;
+  }
   &.active {
     border-bottom: 3px solid #01bf71;
   }

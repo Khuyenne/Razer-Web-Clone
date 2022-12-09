@@ -1,5 +1,5 @@
 import React from "react";
-import { MdKeyboardArrowRight } from "react-icons/md";
+
 import {
   HomepageContainer,
   HPWrapper,
@@ -10,6 +10,7 @@ import {
   TopLine,
   Heading,
   InfoLinks,
+  IconArrow,
 } from "./HomepageElements";
 
 const Homepages = ({
@@ -34,7 +35,7 @@ const Homepages = ({
             <Heading lightText={lightText}>{headLine}</Heading>
             <InfoLinks lightText={lightText}>
               {informLinks}
-              <MdKeyboardArrowRight />
+              <IconArrow />
             </InfoLinks>
           </TextWrapper>
         </Column>

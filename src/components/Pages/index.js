@@ -6,6 +6,9 @@ import Info from "../Info";
 import { homeObjThree, homeObjTwo } from "../Info/Data";
 import { homeObjOne } from "../Homepages/Data";
 import Homepages from "../Homepages";
+import Bannerpages from "../Bannerpages";
+import { homeObjFour, homeObjFive } from "../Bannerpages/Data";
+import Footer from "../Footer";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +25,9 @@ const Home = () => {
       <Homepages {...homeObjOne} />
       <Info {...homeObjTwo} />
       <Info {...homeObjThree} />
+      <Bannerpages {...homeObjFour} />
+      <Bannerpages {...homeObjFive} />
+      <Footer />
     </>
   );
 };

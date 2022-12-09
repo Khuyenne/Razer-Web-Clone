@@ -2,15 +2,16 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 export const InfoContainer = styled.div`
-  background-color: #696969;
+  background-color: #222222;
   width: 100%;
+
   height: 100%;
+  overflow: hidden;
 `;
-export const InfoWrapper = styled.div``;
+export const InfoWrapper = styled.span``;
 export const Column = styled.div`
   position: relative;
   width: 100%;
-  margin: 0 auto;
 `;
 export const TextWrapper = styled.div`
   padding-top: 0;
@@ -83,11 +84,12 @@ position: absolute;
     top: 12%;
     font-size: 16px;`;
 
-export const ImgWrap = styled.div``;
+export const ImgWrap = styled.div`
+  height: 100%;
+`;
 export const Img = styled.img`
   width: 100%;
-  height: 100%;
-  margin-top: -70px;
+  margin-top: -85px;
   margin-bottom: -20px;
   @media screen and (max-width: 768px) {
   }

@@ -1,14 +1,15 @@
 import styled from "styled-components";
-
+import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.div`
   background-color: #000000;
   line-height: 24px;
+  margin: 40px 0 -10px -10px;
+  width: 100.95%;
 `;
 
 export const FooterWrap = styled.div`
-  padding: 48px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,11 +20,12 @@ export const FooterLinkItems = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 16px;
+  margin: 26px;
   text-align: left;
   width: 160px;
   box-sizing: border-box;
   color: #fff;
+
   font-family: "Roboto";
   @media screen and (max-width: 420px) {
     margin: 0;
@@ -58,6 +60,7 @@ export const FooterLink = styled(Link)`
   font-size: 12px;
   &:hover {
     color: #fff;
+    text-decoration: underline;
   }
 `;
 
@@ -67,7 +70,7 @@ export const SocialWrap = styled.div`
   display: flex;
   flex-direction: column;
 
-  margin: 12px;
+  margin: 11px;
 
   box-sizing: border-box; ;
 `;
@@ -85,4 +88,49 @@ export const SocialIconLink = styled.div`
   line-height: 12px;
   margin: 0px 5px;
   text-align: right;
+`;
+
+// export const endLine = styled.hr`
+//   color: #999999;
+// `;
+export const Footerbottom = styled.div`
+  color: #999999;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+export const FooterInfo = styled.div`
+  display: flex;
+  margin-right: 1.6rem;
+`;
+export const copyRight = styled.span`
+  display: flex;
+`;
+export const FooterInfoLink = styled.ul`
+  display: flex;
+  margin-left: 6px;
+`;
+export const FooterCountry = styled.div`
+  display: flex;
+`;
+export const FooterCounInfo = styled.p`
+  display: flex;
+  font-size: 12px;
+  color: #fff;
+  margin-right: 0.2rem;
+`;
+export const FooterCounLink = styled(Link)`
+  display: flex;
+  margin-top: 0.68rem;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+`;
+
+export const Arrowright = styled(MdKeyboardArrowRight)`
+  margin-top: 0.3rem;
 `;

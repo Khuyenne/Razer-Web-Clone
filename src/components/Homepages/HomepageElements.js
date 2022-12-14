@@ -2,15 +2,20 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 export const HomepageContainer = styled.div`
-  width: 100%;
+  width: 100.95%;
   height: 100%;
   background-color: #222222;
   margin-bottom: -70px;
+  margin: 8px 0px -50px -10px;
 `;
-export const HPWrapper = styled.div``;
+export const HPWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+`;
 export const Column = styled.div`
   position: relative;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 `;
 export const TextWrapper = styled.div`
@@ -64,13 +69,9 @@ export const InfoLinks = styled.p`
     font-size: 16px;
 `;
 
-export const ImgWrap = styled.div`
-  height: 100%;
-`;
+export const ImgWrap = styled.div``;
 export const Img = styled.img`
   width: 100%;
-  @media screen and (max-width: 768px) {
-  }
 `;
 export const IconArrow = styled(MdKeyboardArrowRight)`
   color: #44d62c;

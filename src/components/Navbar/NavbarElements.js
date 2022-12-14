@@ -1,15 +1,16 @@
 import styled from "styled-components";
-// import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
+import { Link as LinkR } from "react-router-dom";
+// import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   background: #000;
+  padding: 0;
   height: 60px;
-  margin-top: -10px;
+  margin: -8px;
+  margin-top: -8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 300;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -94,12 +95,13 @@ export const NavBtnLink = styled.div`
   white-space: nowrap;
   padding: 39px 60px 0px 0px;
   color: #999999;
-  font-size: 20px;
+  font-size: 18px;
+  text-decoration: none;
   &:hover {
     color: #fff;
   }
 `;
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled(LinkR)`
   color: #999999;
   font-family: "Alumni Sans Pinstripe";
   display: flex;

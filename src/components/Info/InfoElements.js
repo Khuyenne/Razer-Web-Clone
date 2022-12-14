@@ -3,8 +3,8 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 export const InfoContainer = styled.div`
   background-color: #222222;
-  width: 100%;
-
+  width: 100.95%;
+  margin: 8px 0px -40px -10px;
   height: 100%;
   overflow: hidden;
 `;
@@ -40,7 +40,7 @@ export const Heading = styled.h2`
   position: absolute;
   text-align: center;
   color: #fff;
-  top: 6%;
+  top: 7%;
   width: 100%;
   font-size: 24px;
   font-weight: 400;
@@ -62,7 +62,7 @@ export const InfoLinks1 = styled.p`
   position: absolute;
   text-align: center;
   color: #fff;
-  top: 12%;
+  top: 13%;
   width: 100%;
   font-size: 19px;
   font-family: "RazerF5";
@@ -75,7 +75,7 @@ export const InfoLinks2 = styled.p`
 position: absolute;
   text-align: center;
   color: #fff;
-  top: 12%;
+  top: 13%;
   width: 100%;
   font-family: "RazerF5";
   font-size: 19px;

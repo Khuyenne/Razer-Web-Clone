@@ -5,6 +5,7 @@ export const BanContainer = styled.div`
   background-color: #222222;
   display: flex;
   overflow: hidden;
+  margin: 40px -8px -40px -10px;
 `;
 export const ImgWrap1 = styled.div`
   position: relative;
@@ -13,7 +14,7 @@ export const ImgWrap1 = styled.div`
 export const Img1 = styled.img`
   width: 99%;
   height: 99%;
-  // margin-top: -60px;
+
   // margin-right: -10px;
 `;
 export const TopLine1 = styled.h1`

@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { HiOutlineBars2 } from "react-icons/hi2";
 import { AiOutlineSearch } from "react-icons/ai";
 import { CgShoppingCart } from "react-icons/cg";
-
+import { animateScroll as scroll } from "react-scroll";
 import {
   Nav,
   NavbarContainer,
@@ -16,11 +16,27 @@ import {
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">
+          <NavLogo to="/" onClick={toggleHome}>
             <img src="/logo.svg" alt="logo" height={35} width={35} />
           </NavLogo>
           <MobileIcon1 onClick={toggle}>

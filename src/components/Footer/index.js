@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   FooterContainer,
   FooterWrap,
@@ -13,6 +12,13 @@ import {
   SocialIconLink,
   SocialIcons,
   SocialSlogan,
+  Arrowright,
+  Footerbottom,
+  FooterInfo,
+  FooterInfoLink,
+  FooterCountry,
+  FooterCounInfo,
+  FooterCounLink,
 } from "./FooterElements";
 const Footer = () => {
   return (
@@ -68,23 +74,43 @@ const Footer = () => {
               <SocialSlogan>FOR GAMERS BY GAMERS</SocialSlogan>
               <SocialIcons>
                 <SocialIconLink href="/" target="_blank" arial-label="Facebook">
-                  <img src="/facebook.svg" alt="fb" />
+                  <img src="/iconsocial/facebook.svg" alt="fb" />
                 </SocialIconLink>
                 <SocialIconLink
                   href="/"
                   target="_blank"
                   arial-label="Instagram"
                 >
-                  <img src="/instagram.svg" alt="insta" />
+                  <img src="/iconsocial/instagram.svg" alt="insta" />
                 </SocialIconLink>
                 <SocialIconLink href="/" target="_blank" arial-label="Twitter">
-                  <img src="/twitter.svg" alt="twitter" />
+                  <img src="/iconsocial/twitter.svg" alt="twitter" />
                 </SocialIconLink>
               </SocialIcons>
             </SocialWrap>
           </SocialMedia>
         </FooterLinkContainer>
       </FooterWrap>
+      <hr width={1000} color={999999} />
+      <Footerbottom>
+        <copyRight>Copyright © 2022 Razer Inc. All rights reserved.</copyRight>
+        <FooterInfo>
+          <FooterInfoLink>Site Map</FooterInfoLink>
+          <FooterInfoLink>|</FooterInfoLink>
+          <FooterInfoLink>Legal Terms</FooterInfoLink>
+          <FooterInfoLink>|</FooterInfoLink>
+          <FooterInfoLink>Privacy Policy</FooterInfoLink>
+          <FooterInfoLink>|</FooterInfoLink>
+          <FooterInfoLink>Cookie Policy</FooterInfoLink>
+        </FooterInfo>
+        <FooterCountry>
+          <FooterCounInfo>United States |</FooterCounInfo>
+
+          <FooterCounLink to="/">
+            Change Location <Arrowright />
+          </FooterCounLink>
+        </FooterCountry>
+      </Footerbottom>
     </FooterContainer>
   );
 };

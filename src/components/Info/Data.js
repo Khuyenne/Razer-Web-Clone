@@ -4,7 +4,7 @@ export const homeObjTwo = {
   headLine: "ultra-fresh. ultra-gaming",
   informLinks1: "Learn More",
   informLinks2: "Buy",
-  img: "/laptop.png",
+  img: "/homepageimg/laptop.png",
   alt: "latopgaming",
 };
 
@@ -14,6 +14,6 @@ export const homeObjThree = {
   headLine: "low-profile ergonomics. high-performance wireless",
   informLinks1: "Learn More",
   informLinks2: "Buy",
-  img: "/keyboard.png",
+  img: "/homepageimg/keyboard.png",
   alt: "keyboardgaming",
 };

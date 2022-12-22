@@ -5,6 +5,6 @@ export const homeObjOne = {
   topLine: "welcome to the winning season",
   headLine: "holiday season gaming exclusive",
   informLinks: "Shop Now",
-  img: "/homepage.png",
+  img: "/homepageimg/homepage.png",
   alt: "homepage",
 };

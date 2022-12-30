@@ -6,10 +6,11 @@ import {
   Img1,
   TopLine1,
   Heading1,
-  BanLinks1,
-  BanLinks2,
-  BanLinks3,
-  BanLinks4,
+  BanLinks,
+  BanText1,
+  BanText2,
+  BanText3,
+  BanText4,
   IconArrow,
   Img2,
   TopLine2,
@@ -36,27 +37,33 @@ const Bannerpages = ({
         <Img1 src={img1} alt={alt1}></Img1>
         <TopLine1>{topLine1}</TopLine1>
         <Heading1>{headLine1}</Heading1>
-        <BanLinks1>
-          {Links1}
-          <IconArrow />
-        </BanLinks1>
-        <BanLinks2>
-          {Links2}
-          <IconArrow />
-        </BanLinks2>
+        <BanLinks>
+          <BanText1>
+            {Links1}
+            <IconArrow />
+          </BanText1>
+
+          <BanText2>
+            {Links2}
+            <IconArrow />
+          </BanText2>
+        </BanLinks>
       </ImgWrap1>
       <ImgWrap2>
         <Img2 src={img2} alt={alt2}></Img2>
         <TopLine2>{topLine2}</TopLine2>
         <Heading2>{headLine2}</Heading2>
-        <BanLinks3>
-          {Links3}
-          <IconArrow />
-        </BanLinks3>
-        <BanLinks4>
-          {Links4}
-          <IconArrow />
-        </BanLinks4>
+        <BanLinks>
+          <BanText3>
+            {Links3}
+            <IconArrow />
+          </BanText3>
+
+          <BanText4>
+            {Links4}
+            <IconArrow />
+          </BanText4>
+        </BanLinks>
       </ImgWrap2>
     </BanContainer>
   );

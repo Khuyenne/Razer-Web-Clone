@@ -71,7 +71,7 @@ const Footer = () => {
           </FooterLinkWrapper>
           <SocialMedia>
             <SocialWrap>
-              <SocialSlogan>FOR GAMERS BY GAMERS</SocialSlogan>
+              <SocialSlogan>FOR GAMERS. BY GAMERS.™</SocialSlogan>
               <SocialIcons>
                 <SocialIconLink href="/" target="_blank" arial-label="Facebook">
                   <img src="/iconsocial/facebook.svg" alt="fb" />

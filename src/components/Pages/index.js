@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar";
-import Sidebar from "../SideBar";
+import Searchbar from "../Searchbar";
 import Notification from "../Notificattion";
 import Info from "../Info";
 import { homeObjThree, homeObjTwo } from "../Info/Data";
@@ -19,8 +19,8 @@ const Home = () => {
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
+      <Searchbar isOpen={isOpen} toggle={toggle} />
       <Notification />
       <Homepages {...homeObjOne} />
       <Info {...homeObjTwo} />

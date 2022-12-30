@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { HiOutlineBars2 } from "react-icons/hi2";
-import { AiOutlineSearch } from "react-icons/ai";
-import { CgShoppingCart } from "react-icons/cg";
-import { animateScroll as scroll } from "react-scroll";
+
+// import { animateScroll as scroll } from "react-scroll";
 import {
   Nav,
   NavbarContainer,
@@ -13,9 +12,18 @@ import {
   NavItem,
   NavLinks,
   NavBtnLink,
+  NavNames,
+  SearchIconbutton,
+  ShoppingCartIcon,
+  // SearchWapper,
+  // SearchInput,
+  // Closebutton,
+  // CloseIcon,
+
+  // SearchIcon,
 } from "./NavbarElements";
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ isOpen, toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -30,8 +38,9 @@ const Navbar = ({ toggle }) => {
   }, []);
 
   const toggleHome = () => {
-    scroll.scrollToTop();
+    window.location.href = "/";
   };
+
   return (
     <>
       <Nav scrollNav={scrollNav}>
@@ -43,23 +52,73 @@ const Navbar = ({ toggle }) => {
             <HiOutlineBars2 />
           </MobileIcon1>
           <MobileIcon2 onClick={toggle}>
-            <CgShoppingCart />
+            <ShoppingCartIcon />
           </MobileIcon2>
           <NavMenu>
             <NavItem>
-              <NavLinks to="pc">PC</NavLinks>
-              <NavLinks to="console">Console</NavLinks>
-              <NavLinks to="mobile">Mobile</NavLinks>
-              <NavLinks to="lifestyle">Lifestyle</NavLinks>
-              <NavLinks to="services">Services</NavLinks>
-              <NavLinks to="community">Community</NavLinks>
-              <NavLinks to="support">Support</NavLinks>
-              <NavLinks to="store">Store</NavLinks>
-              <NavBtnLink to="search">
-                <AiOutlineSearch />
+              <NavLinks>
+                <NavNames to="pc">PC</NavNames>
+              </NavLinks>
+              <NavLinks>
+                <NavNames to="console">Console</NavNames>
+              </NavLinks>
+              <NavLinks>
+                <NavNames to="mobile">Mobile</NavNames>
+              </NavLinks>
+              <NavLinks>
+                <NavNames to="lifestyle">Lifestyle</NavNames>
+              </NavLinks>
+              <NavLinks>
+                <NavNames to="services">Services</NavNames>
+              </NavLinks>
+              <NavLinks>
+                <NavNames to="community">Community</NavNames>
+              </NavLinks>
+              <NavLinks>
+                <NavNames to="support">Support</NavNames>
+              </NavLinks>
+              <NavLinks>
+                <NavNames to="store">Store</NavNames>
+              </NavLinks>
+              <NavBtnLink>
+                {/* <SearchIconbutton type="a" to="#search" className="button">
+                  <SearchWapper id="search">
+                    <SearchInput type={"text"} placeholder="Search razer.com" />
+
+                    <Closebutton>
+                      <CloseIcon
+                        to="/"
+                        aria-label="Close alert"
+                        type="button"
+                        data-close
+                      >
+                        Close
+                      </CloseIcon>
+                    </Closebutton>
+                  </SearchWapper>
+                </SearchIconbutton> */}
+
+                <SearchIconbutton />
+
+                {/* <SearchIconbutton onClick={setIcon}>
+                  <div class="search-container">
+                    <form action="/search" method="get">
+                      <input
+                        className="search"
+                        id="searchleft"
+                        type="search"
+                        name="q"
+                        placeholder="Search"
+                      />
+                      <label className="button searchbutton" for="searchleft">
+                        <span class="mglass">&#9906;</span>
+                      </label>
+                    </form>
+                  </div>
+                </SearchIconbutton> */}
               </NavBtnLink>
-              <NavBtnLink to="shoppingcart">
-                <CgShoppingCart />
+              <NavBtnLink to="/">
+                <ShoppingCartIcon />
               </NavBtnLink>
             </NavItem>
           </NavMenu>

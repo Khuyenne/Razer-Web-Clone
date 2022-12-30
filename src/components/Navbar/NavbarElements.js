@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
+import { AiOutlineSearch } from "react-icons/ai";
+import { CgShoppingCart } from "react-icons/cg";
+// import { AiOutlineClose } from "react-icons/ai";
 // import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
@@ -96,24 +99,99 @@ export const NavBtnLink = styled.div`
   padding: 39px 60px 0px 0px;
   color: #999999;
   font-size: 18px;
-  text-decoration: none;
-  &:hover {
-    color: #fff;
-  }
 `;
-export const NavLinks = styled(LinkR)`
+export const NavLinks = styled.div`
   color: #999999;
   font-family: "Alumni Sans Pinstripe";
   display: flex;
   align-items: center;
-  text-decoration: none;
+
   padding: 0px 70px 0px 0px;
   height: 100%;
   cursor: pointer;
+`;
+export const NavNames = styled(LinkR)`
+  color: #999999;
+  text-decoration: none;
   &:hover {
     color: #fff;
   }
   &.active {
     border-bottom: 3px solid #01bf71;
   }
+`;
+export const SearchIconbutton = styled(AiOutlineSearch)`
+  display: flex;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+  }
+`;
+
+export const ShoppingCartIcon = styled(CgShoppingCart)`
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+  }
+`;
+
+export const SearchWapper = styled.div`
+  display: block;
+  top: 0;
+  z-index: 10;
+  position: absolute;
+
+  width: 61%;
+  height: 100%;
+  background: #0d0d0d;
+
+  top: 0;
+  left: 20%;
+  background: #222;
+`;
+export const SearchIcon = styled(AiOutlineSearch)`
+  position: absolute;
+  top: 1rem;
+
+  background: transparent;
+  color: #999;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.2rem;
+`;
+export const SearchInput = styled.input`
+  overflow: visible;
+  font-size: 17px;
+  padding: 0 3rem;
+  background: 0 0;
+  border-radius: 0;
+  color: #fff;
+  min-height: inherit;
+  border: 0;
+`;
+export const Searchbutton = styled.button`
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+`;
+export const CloseIcon = styled.button`
+  display: flex;
+  position: absolute;
+  top: 16%;
+  right: 2%;
+  transform: translate(0%, 60%);
+  font-size: 18px;
+  color: #999;
+`;
+
+export const Closebutton = styled.div`
+  display: flex;
+  position: absolute;
+  top: 16%;
+  right: 2%;
+  transform: translate(0%, 60%);
+  font-size: 18px;
+  color: #999;
 `;

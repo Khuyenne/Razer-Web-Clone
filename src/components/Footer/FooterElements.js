@@ -123,6 +123,7 @@ export const FooterCounInfo = styled.p`
 `;
 export const FooterCounLink = styled(Link)`
   display: flex;
+  color: #999999;
   margin-top: 0.68rem;
   text-decoration: none;
   &:hover {

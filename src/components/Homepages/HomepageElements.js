@@ -64,6 +64,11 @@ export const InfoLinks = styled.p`
   width: 100%;
   font-size: 19px;
   font-family: "Roboto", sans-serif;
+  
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
   @media screen and (max-width: 768px) {
     top: 12%;
     font-size: 16px;

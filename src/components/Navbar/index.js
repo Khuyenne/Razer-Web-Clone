@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { HiOutlineBars2 } from "react-icons/hi2";
 
 // import { animateScroll as scroll } from "react-scroll";
@@ -15,43 +15,56 @@ import {
   NavNames,
   SearchIconbutton,
   ShoppingCartIcon,
-  // SearchWapper,
-  // SearchInput,
-  // Closebutton,
-  // CloseIcon,
-
-  // SearchIcon,
+  ShoppingCartContainer,
+  SCWrapper,
+  SCtooltip,
+  SCMessage,
+  SCul,
+  Scli,
+  SCCart,
+  SCOrd,
+  SCAcc,
+  SCReward,
+  SCLogin,
+  Cartimg,
+  Ordimg,
+  Accimg,
+  Rewardsicon,
+  LogIcon,
 } from "./NavbarElements";
 
-const Navbar = ({ isOpen, toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false);
-  const changeNav = () => {
-    if (window.scrollY >= 80) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
+const Navbar = ({ toggle }) => {
+  // const [scrollNav, setScrollNav] = useState(false);
+  // const changeNav = () => {
+  //   if (window.scrollY >= 80) {
+  //     setScrollNav(true);
+  //   } else {
+  //     setScrollNav(false);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", changeNav);
+  // }, []);
+  const [isActive, setIsActive] = useState(false);
+  const toggleCart = () => {
+    setIsActive(!isActive);
   };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNav);
-  }, []);
-
   const toggleHome = () => {
     window.location.href = "/";
   };
 
   return (
     <>
-      <Nav scrollNav={scrollNav}>
+      <Nav>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
             <img src="/logo.svg" alt="logo" height={35} width={35} />
           </NavLogo>
-          <MobileIcon1 onClick={toggle}>
+          <MobileIcon1>
             <HiOutlineBars2 />
           </MobileIcon1>
-          <MobileIcon2 onClick={toggle}>
+          <MobileIcon2>
             <ShoppingCartIcon />
           </MobileIcon2>
           <NavMenu>
@@ -81,8 +94,8 @@ const Navbar = ({ isOpen, toggle }) => {
                 <NavNames to="store">Store</NavNames>
               </NavLinks>
               <NavBtnLink>
-                {/* <SearchIconbutton type="a" to="#search" className="button">
-                  <SearchWapper id="search">
+                <SearchIconbutton onClick={toggle}>
+                  {/* <SearchWapper id="search">
                     <SearchInput type={"text"} placeholder="Search razer.com" />
 
                     <Closebutton>
@@ -95,30 +108,57 @@ const Navbar = ({ isOpen, toggle }) => {
                         Close
                       </CloseIcon>
                     </Closebutton>
-                  </SearchWapper>
-                </SearchIconbutton> */}
-
-                <SearchIconbutton />
-
-                {/* <SearchIconbutton onClick={setIcon}>
-                  <div class="search-container">
-                    <form action="/search" method="get">
-                      <input
-                        className="search"
-                        id="searchleft"
-                        type="search"
-                        name="q"
-                        placeholder="Search"
-                      />
-                      <label className="button searchbutton" for="searchleft">
-                        <span class="mglass">&#9906;</span>
-                      </label>
-                    </form>
-                  </div>
-                </SearchIconbutton> */}
+                  </SearchWapper> */}
+                </SearchIconbutton>
               </NavBtnLink>
-              <NavBtnLink to="/">
-                <ShoppingCartIcon />
+              <NavBtnLink>
+                <ShoppingCartIcon onClick={toggleCart} />
+                <ShoppingCartContainer isActive={isActive} onClick={toggleCart}>
+                  <SCWrapper>
+                    <SCtooltip></SCtooltip>
+                    <SCMessage>Your Cart is empty.</SCMessage>
+                    <SCul>
+                      <Scli>
+                        <SCCart to="cart">
+                          <Cartimg />
+                          Cart
+                        </SCCart>
+                      </Scli>
+                      <Scli>
+                        <SCOrd to="order">
+                          <Ordimg
+                            src="https://www.razer.com/assets/images/icons/orders_icon.svg"
+                            alt="ord"
+                            width={20}
+                            height={16}
+                          />
+                          Orders
+                        </SCOrd>
+                      </Scli>
+                      <Scli>
+                        <SCAcc to="account">
+                          <Accimg
+                            src="https://www.razer.com/assets/images/icons/account-icon.svg"
+                            alt="accou"
+                          />
+                          Account
+                        </SCAcc>
+                      </Scli>
+                      <Scli>
+                        <SCReward to="reward">
+                          <Rewardsicon />
+                          RazerStore Rewards
+                        </SCReward>
+                      </Scli>
+                      <Scli>
+                        <SCLogin to="login">
+                          <LogIcon />
+                          Log In
+                        </SCLogin>
+                      </Scli>
+                    </SCul>
+                  </SCWrapper>
+                </ShoppingCartContainer>
               </NavBtnLink>
             </NavItem>
           </NavMenu>

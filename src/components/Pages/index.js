@@ -9,6 +9,7 @@ import Homepages from "../Homepages";
 import Bannerpages from "../Bannerpages";
 import { homeObjFour, homeObjFive } from "../Bannerpages/Data";
 import Footer from "../Footer";
+// import ShoppingCart from "../ShoppingCart";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,7 @@ const Home = () => {
     <>
       <Navbar toggle={toggle} />
       <Searchbar isOpen={isOpen} toggle={toggle} />
+      {/* <ShoppingCart isActive={isActive} toggle={toggleCart} /> */}
       <Notification />
       <Homepages {...homeObjOne} />
       <Info {...homeObjTwo} />

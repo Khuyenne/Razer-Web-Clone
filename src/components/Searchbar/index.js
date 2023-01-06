@@ -13,8 +13,8 @@ const Searchbar = ({ isOpen, toggle }) => {
   return (
     <SearchbarContainer isOpen={isOpen} onClick={toggle}>
       <SearchbarWrapper>
+        <Icon></Icon>
         <SearchbarMenu>
-          <Icon></Icon>
           <SearchbarInput
             type="text"
             placeholder="Search razer.com"

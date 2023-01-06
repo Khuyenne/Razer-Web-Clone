@@ -4,11 +4,11 @@ import styled from "styled-components";
 import { AiOutlineClose } from "react-icons/ai";
 import { AiOutlineSearch } from "react-icons/ai";
 
-export const SearchbarContainer = styled.div`
+export const SearchbarContainer = styled.aside`
   display: flex;
   top: 0;
   z-index: 10;
-  position: absolute;
+  position: fixed;
   cursor: pointer;
   width: 61%;
   height: 6%;
@@ -17,7 +17,8 @@ export const SearchbarContainer = styled.div`
   top: 0;
   left: 20%;
   background: #222;
-
+  // display: ${({ isOpen }) => (isOpen ? "block" : "none")};
+  // width: ${(props) => (props.isOpen ? 360 : 48)}px;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
@@ -34,7 +35,7 @@ export const CloseIcon = styled(AiOutlineClose)`
 export const Icon = styled(AiOutlineSearch)`
   position: absolute;
   top: 1rem;
-
+  left: 16px;
   background: transparent;
   color: #999;
   cursor: pointer;
@@ -44,17 +45,22 @@ export const Icon = styled(AiOutlineSearch)`
 export const SearchbarWrapper = styled.div`
   color: #fff;
 `;
-export const SearchbarMenu = styled.ul``;
+export const SearchbarMenu = styled.form`
+  padding: 17px;
+
+  align-items: left;
+`;
 
 export const SearchbarInput = styled.input`
   overflow: visible;
-  font-size: 17px;
+  font-size: 1.1rem;
   padding: 0 3rem;
   background: 0 0;
   border-radius: 0;
   color: #fff;
   min-height: inherit;
   border: 0;
+  text-align: left;
 `;
 // export const Closebutton = styled.div`
 //   display: flex;

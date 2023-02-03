@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 export const FooterContainer = styled.div`
   background-color: #000000;
   line-height: 24px;
-  margin: 40px 0 -10px -10px;
-  width: 100.95%;
+  margin: 0px;
+  width: 100%;
 `;
 
 export const FooterWrap = styled.div`
@@ -111,6 +111,7 @@ export const copyRight = styled.span`
 export const FooterInfoLink = styled.ul`
   display: flex;
   margin-left: 6px;
+  margin-bottom: 0px;
 `;
 export const FooterCountry = styled.div`
   display: flex;
@@ -120,6 +121,7 @@ export const FooterCounInfo = styled.p`
   font-size: 12px;
   color: #fff;
   margin-right: 0.2rem;
+  margin-top: 0.68rem;
 `;
 export const FooterCounLink = styled(Link)`
   display: flex;

@@ -47,6 +47,7 @@ const Navbar = ({ toggle }) => {
           </MobileIcon2>
           <NavMenu>
             <NavItem>
+<<<<<<< Updated upstream
               <NavLinks to="pc">PC</NavLinks>
               <NavLinks to="console">Console</NavLinks>
               <NavLinks to="mobile">Mobile</NavLinks>
@@ -57,6 +58,49 @@ const Navbar = ({ toggle }) => {
               <NavLinks to="store">Store</NavLinks>
               <NavBtnLink to="search">
                 <AiOutlineSearch />
+=======
+              <NavLinks>
+                <NavNames to="store">Store</NavNames>
+              </NavLinks>
+              <NavLinks>
+                <NavNames to="console">Console</NavNames>
+              </NavLinks>
+              <NavLinks>
+                <NavNames to="mobile">Mobile</NavNames>
+              </NavLinks>
+              <NavLinks>
+                <NavNames to="lifestyle">Lifestyle</NavNames>
+              </NavLinks>
+              <NavLinks>
+                <NavNames to="services">Services</NavNames>
+              </NavLinks>
+              <NavLinks>
+                <NavNames to="community">Community</NavNames>
+              </NavLinks>
+              <NavLinks>
+                <NavNames to="support">Support</NavNames>
+              </NavLinks>
+              <NavLinks>
+                <NavNames to="pc">PC</NavNames>
+              </NavLinks>
+              <NavBtnLink>
+                <SearchIconbutton onClick={toggle}>
+                  {/* <SearchWapper id="search">
+                    <SearchInput type={"text"} placeholder="Search razer.com" />
+
+                    <Closebutton>
+                      <CloseIcon
+                        to="/"
+                        aria-label="Close alert"
+                        type="button"
+                        data-close
+                      >
+                        Close
+                      </CloseIcon>
+                    </Closebutton>
+                  </SearchWapper> */}
+                </SearchIconbutton>
+>>>>>>> Stashed changes
               </NavBtnLink>
               <NavBtnLink to="shoppingcart">
                 <CgShoppingCart />

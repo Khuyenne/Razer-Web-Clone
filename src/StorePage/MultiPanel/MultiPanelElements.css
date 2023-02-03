@@ -1,0 +1,108 @@
+.mulcomponents{
+    background-color: #000;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    max-height: max-content;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+.multicontainer{
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    width: auto;
+    display: block;
+}
+
+.panel-container{
+    padding: 1rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    color: #999;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.item1{
+    align-self: start;
+    padding: 1.5rem 0;
+    max-width: 363px;
+    margin: 0 auto 1.5rem;
+    background-image: none;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-areas:
+        "icon"
+        "text-1"
+        "long-text-1"
+        "text-2"
+        "description"
+        "cta";
+    grid-template-rows: auto;
+    position: relative;
+    text-align: center;
+    color: #999;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+ .item2{    align-self: start;
+    padding: 2.5rem 0;
+    max-width: 363px;
+    margin: 0 auto 1.5rem;
+    background-image: none;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #999;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.5em;
+ }
+#itembox1, #itembox2{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #44d62c;
+}
+
+.iconitem1, .iconitem2{
+    width: 363px;
+    margin: 0 auto;
+}
+
+.item-text-1{
+    font-weight: 760;
+    font-family: Arial;
+    font-size: 2.1rem;
+    color: #fff;
+    margin-top: 10px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    display: block;
+    
+}
+
+.headingtext1{
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+a.headingtext1:hover{
+    text-decoration: none;
+    color: #fff;
+}

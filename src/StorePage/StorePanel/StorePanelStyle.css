@@ -1,0 +1,16 @@
+.header{
+    color: #44d62c;
+    margin-left: 45px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.subheader{
+    margin-left: 45px;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}

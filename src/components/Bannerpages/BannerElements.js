@@ -5,7 +5,7 @@ export const BanContainer = styled.div`
   background-color: #222222;
   display: flex;
   overflow: hidden;
-  margin: 40px -8px -40px -10px;
+  margin: 0px;
 `;
 export const ImgWrap1 = styled.div`
   position: relative;

@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 export const HomepageContainer = styled.div`
-  width: 100.95%;
+  width: 100%;
   height: 100%;
   background-color: #222222;
-  margin-bottom: -70px;
-  margin: 8px 0px -50px -10px;
+
+  margin: 0px 0px 0px 0px;
 `;
 export const HPWrapper = styled.div`
   width: 100%;

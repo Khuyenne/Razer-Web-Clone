@@ -1,0 +1,102 @@
+.wbcomponents{
+    background-color: #000;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    max-height: max-content;
+    max-width: 1920px;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+.wbcontainer{
+    max-width: 1200px;
+    height: 100%;
+    position: relative;
+    color: #999;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    left: 19%;
+
+}
+
+.section-header{
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0rem 0 2rem;
+    color: #44d62c;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+}
+.panel-contain{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    color: #999;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.item-1{
+    align-self: start;
+    margin: 1rem auto;
+    background-image: none;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-areas:
+        "icon"
+        "text-1"
+        "long-text-1"
+        "text-2"
+        "description"
+        "cta";
+    grid-template-rows: auto;
+    position: relative;
+    text-align: center;
+    color: #999;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.icon-item-1{
+    width: 65px;
+    grid-area: icon;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.item-text{
+    text-transform: none;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #eee;
+    margin: 1rem 0 0.25rem;
+    line-height: 1.2;
+}
+
+.item-long-text-1{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #999;
+    line-height: 1.5em;
+}

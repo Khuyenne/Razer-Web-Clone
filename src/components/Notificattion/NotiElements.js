@@ -6,12 +6,13 @@ export const NotiContainer = styled.div`
   align-items: center;
   color: #999999;
   justify-content: center;
-  line-height: 22px;
-  margin: -8px;
+  line-height: 20px;
+  margin: 0px;
 `;
 
 export const NotiAlert = styled.p`
   color: #eeeeee;
+  margin: 20px;
   text-align: center;
   font-size: 15px;
 `;

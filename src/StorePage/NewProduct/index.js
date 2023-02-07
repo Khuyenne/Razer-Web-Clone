@@ -1,4 +1,5 @@
 import React from "react";
+import { useSnapCarousel } from "react-snap-carousel";
 
 import {
   NewProductContainer,
@@ -29,6 +30,7 @@ import {
 } from "./NewProductElements";
 
 const NewProduct = () => {
+  const { scrollRef } = useSnapCarousel();
   return (
     <NewProductContainer>
       <NPRow>
@@ -43,7 +45,7 @@ const NewProduct = () => {
         </NPParagraphs>
         <NPMultilPanels>
           <NPCardNav>
-            <NPul>
+            <NPul ref={scrollRef}>
               <NPLi>
                 <img
                   src="/storepage/card/audio_card.png"
@@ -77,6 +79,7 @@ const NewProduct = () => {
                 </NPLiContent>
                 <NPBadgeGreen>NEW</NPBadgeGreen>
               </NPLi>
+
               <NPLi>
                 <img
                   src="/storepage/card/laptop_card.png"

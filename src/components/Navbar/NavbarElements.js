@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   background: #000;
   padding: 0;
   height: 60px;
-  margin: -8px;
+  margin: 0px;
   margin-top: -8px;
   display: flex;
   justify-content: center;
@@ -98,7 +98,7 @@ export const NavItem = styled.li`
 
 export const NavBtnLink = styled.div`
   white-space: nowrap;
-  padding: 39px 60px 0px 0px;
+  padding: 40px 60px 0px 0px;
   color: #999999;
   font-size: 18px;
 `;
@@ -108,7 +108,7 @@ export const NavLinks = styled.div`
   display: flex;
   align-items: center;
 
-  padding: 0px 70px 0px 0px;
+  padding: 15px 70px 0px 0px;
   height: 100%;
   cursor: pointer;
 `;
@@ -124,6 +124,7 @@ export const NavNames = styled(LinkR)`
 `;
 export const SearchIconbutton = styled(AiOutlineSearch)`
   display: flex;
+  margin-top: -20px;
   text-decoration: none;
   &:hover {
     color: #fff;
@@ -132,6 +133,7 @@ export const SearchIconbutton = styled(AiOutlineSearch)`
 
 export const ShoppingCartIcon = styled(CgShoppingCart)`
   text-decoration: none;
+  margin-top: -50px;
   &:hover {
     color: #fff;
   }
@@ -156,7 +158,7 @@ export const SCWrapper = styled.div`
   min-width: 18rem;
   position: absolute;
   right: -1rem;
-  top: 0.5rem;
+  top: -5px;
   z-index: 2;
 `;
 
@@ -167,7 +169,7 @@ export const SCtooltip = styled.div`
   height: 15px;
   position: absolute;
   right: 1.2rem;
-  top: -0.85rem;
+  top: -15px;
   width: 28px;
 `;
 

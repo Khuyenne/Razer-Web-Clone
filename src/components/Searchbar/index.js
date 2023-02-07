@@ -22,10 +22,7 @@ const Searchbar = ({ isOpen, toggle }) => {
             minlength="1"
           ></SearchbarInput>
         </SearchbarMenu>
-        {/* <Closebutton data-closable>
-          <CloseIcon aria-label="Close alert" type="button" data-close />
-          <span aria-hidden="true">&times;</span>
-        </Closebutton> */}
+
         <CloseIcon />
       </SearchbarWrapper>
     </SearchbarContainer>

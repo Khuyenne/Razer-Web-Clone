@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 export const HomepageContainer = styled.div`
-  width: 100.95%;
+  width: 100%;
   height: 100%;
   background-color: #222222;
-  margin-bottom: -70px;
-  margin: 8px 0px -50px -10px;
+
+  margin: 0px 0px 0px 0px;
 `;
 export const HPWrapper = styled.div`
   width: 100%;
@@ -64,11 +64,6 @@ export const InfoLinks = styled.p`
   width: 100%;
   font-size: 19px;
   font-family: "Roboto", sans-serif;
-  
-  &:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
   @media screen and (max-width: 768px) {
     top: 12%;
     font-size: 16px;

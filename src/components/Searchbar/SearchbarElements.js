@@ -4,18 +4,21 @@ import styled from "styled-components";
 import { AiOutlineClose } from "react-icons/ai";
 import { AiOutlineSearch } from "react-icons/ai";
 
-export const SearchbarContainer = styled.aside`
+export const SearchbarContainer = styled.div`
   display: flex;
   top: 0;
   z-index: 10;
   position: fixed;
   cursor: pointer;
-  width: 61%;
-  height: 6%;
+  width: 1200px;
+  height: 58px;
+  // padding: 0 375px;
+  top: 20%;
+  left: 20%;
   background: #0d0d0d;
 
   top: 0;
-  left: 20%;
+
   background: #222;
   // display: ${({ isOpen }) => (isOpen ? "block" : "none")};
   // width: ${(props) => (props.isOpen ? 360 : 48)}px;

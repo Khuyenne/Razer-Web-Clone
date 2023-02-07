@@ -1,0 +1,41 @@
+.captionskin{
+    color:#ffffff;
+    font-size:28px;
+    font-weight:400;
+    line-height:33.6px;
+    text-transform:uppercase;
+}
+
+
+.maincaption{
+    justify-self: right;
+    max-width: 33%;
+    text-align: left;
+    margin-left: 50rem; 
+    margin-bottom: 60px;
+}
+
+.noteskin{
+    color:#999999;
+font-size:18px;
+font-weight:300;
+line-height:27px;
+}
+
+.linkskin{
+    text-decoration: none;
+    user-select: none;
+    transition-property: none;
+    color: #44d62c;
+}
+
+.linkskin::after{
+    content: " >";
+    box-sizing: border-box;
+}
+
+a.linkskin:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: #44d62c;
+}

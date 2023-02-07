@@ -70,7 +70,7 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             <NavItem>
               <NavLinks>
-                <NavNames to="pc">PC</NavNames>
+                <NavNames to="store">Store</NavNames>
               </NavLinks>
               <NavLinks>
                 <NavNames to="console">Console</NavNames>
@@ -91,25 +91,10 @@ const Navbar = ({ toggle }) => {
                 <NavNames to="support">Support</NavNames>
               </NavLinks>
               <NavLinks>
-                <NavNames to="store">Store</NavNames>
+                <NavNames to="pc">PC</NavNames>
               </NavLinks>
               <NavBtnLink>
-                <SearchIconbutton onClick={toggle}>
-                  {/* <SearchWapper id="search">
-                    <SearchInput type={"text"} placeholder="Search razer.com" />
-
-                    <Closebutton>
-                      <CloseIcon
-                        to="/"
-                        aria-label="Close alert"
-                        type="button"
-                        data-close
-                      >
-                        Close
-                      </CloseIcon>
-                    </Closebutton>
-                  </SearchWapper> */}
-                </SearchIconbutton>
+                <SearchIconbutton onClick={toggle}></SearchIconbutton>
               </NavBtnLink>
               <NavBtnLink>
                 <ShoppingCartIcon onClick={toggleCart} />

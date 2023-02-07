@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const NewProductContainer = styled.div`
   background: #000000;
-  margin: -4px -8px 0px -7.6px;
+  margin: 0;
 `;
 
 export const NPRow = styled.div`
   line-height: 24px;
-  margin: 0px 335.5px;
-  padding: 40px 0px 0px;
+  margin: 0px 250px;
+  padding: 40px 0px 10px;
 `;
 
 export const NPHeading = styled.div`
@@ -47,9 +47,9 @@ export const NPMultilPanels = styled.div`
 export const NPCardNav = styled.div``;
 
 export const NPul = styled.ul`
-  overflow-x: scroll;
-
-  scroll-snap-type: x proximity;
+  display: flex;
+  overflow: hidden;
+  scrollsnaptype: x mandatory;
   max-width: unset;
   align-items: start;
   color: #ffffff;
@@ -64,11 +64,12 @@ export const NPul = styled.ul`
 `;
 
 export const NPLi = styled.li`
+  flexshrink: 0;
   grid-template-rows: 298px 1fr;
   width: 18.625rem;
   min-height: 480px;
   transform: translateX(calc(min(100vw, 1920px) / 2 - 600px));
-  scroll-snap-align: center;
+  display: flex;
   align-self: stretch;
   gap: 0;
   text-align: left;

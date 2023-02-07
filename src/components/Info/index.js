@@ -8,8 +8,9 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  InfoLinks1,
-  InfoLinks2,
+  InfoLinks,
+  InfoText1,
+  InfoText2,
   ImgWrap,
   Img,
   IconArrow,
@@ -35,14 +36,17 @@ const Info = ({
             <TopLine>{topLine}</TopLine>
             <Heading lightText={lightText}>{headLine}</Heading>
             <Subtitle lightText={lightText}>{description}</Subtitle>
-            <InfoLinks1 lightText={lightText}>
-              {informLinks1}
-              <IconArrow />
-            </InfoLinks1>
-            <InfoLinks2 lightText={lightText}>
-              {informLinks2}
-              <IconArrow />
-            </InfoLinks2>
+            <InfoLinks lightText={lightText}>
+              <InfoText1>
+                {informLinks1}
+                <IconArrow />
+              </InfoText1>
+
+              <InfoText2>
+                {informLinks2}
+                <IconArrow />
+              </InfoText2>
+            </InfoLinks>
           </TextWrapper>
           <ImgWrap>
             <Img src={img} alt={alt} />

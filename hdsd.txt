@@ -1,5 +1,0 @@
-de coi dc thi can co nodejs
-- neu chua co thi cai dat ve may (link: https://nodejs.org/en/)
-
-co nodejs roi tiep den cai react cmd: npm install -g create-react-app
-mo project len va mo cmd "npm start" la hien trang web demo voi duong dan la http://localhost:3000/

@@ -1,5 +1,10 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
+import { AiOutlineSearch } from "react-icons/ai";
+import { CgShoppingCart } from "react-icons/cg";
+import { RiVipDiamondLine } from "react-icons/ri";
+import { MdLogin } from "react-icons/md";
+// import { AiOutlineClose } from "react-icons/ai";
 // import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
@@ -96,25 +101,20 @@ export const NavBtnLink = styled.div`
   padding: 40px 60px 0px 0px;
   color: #999999;
   font-size: 18px;
-  text-decoration: none;
-  &:hover {
-    color: #fff;
-  }
 `;
-export const NavLinks = styled(LinkR)`
+export const NavLinks = styled.div`
   color: #999999;
   font-family: "Alumni Sans Pinstripe";
   display: flex;
   align-items: center;
-<<<<<<< Updated upstream
-  text-decoration: none;
-  padding: 0px 70px 0px 0px;
-=======
 
   padding: 15px 70px 0px 0px;
->>>>>>> Stashed changes
   height: 100%;
   cursor: pointer;
+`;
+export const NavNames = styled(LinkR)`
+  color: #999999;
+  text-decoration: none;
   &:hover {
     color: #fff;
   }
@@ -122,8 +122,6 @@ export const NavLinks = styled(LinkR)`
     border-bottom: 3px solid #01bf71;
   }
 `;
-<<<<<<< Updated upstream
-=======
 export const SearchIconbutton = styled(AiOutlineSearch)`
   display: flex;
   margin-top: -20px;
@@ -312,4 +310,3 @@ export const LogIcon = styled(MdLogin)`
   padding: 0px 10px 0px 0px;
   text-align: left;
 `;
->>>>>>> Stashed changes

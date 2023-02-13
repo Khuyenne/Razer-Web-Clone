@@ -65,18 +65,3 @@ export const SearchbarInput = styled.input`
   border: 0;
   text-align: left;
 `;
-// export const Closebutton = styled.div`
-//   display: flex;
-//   position: absolute;
-//   top: 16%;
-//   right: 2%;
-//   transform: translate(0%, 60%);
-//   font-size: 18px;
-//   color: #999;
-// `;
-// export const Cross = styled.hr`
-//   height: 0;
-//   margin-top: 0px;
-//   margin-right: 30px;
-//   margin-left: 35px;
-// `;

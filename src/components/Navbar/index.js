@@ -94,7 +94,22 @@ const Navbar = ({ toggle }) => {
                 <NavNames to="pc">PC</NavNames>
               </NavLinks>
               <NavBtnLink>
-                <SearchIconbutton onClick={toggle}></SearchIconbutton>
+                <SearchIconbutton onClick={toggle}>
+                  {/* <SearchWapper id="search">
+                    <SearchInput type={"text"} placeholder="Search razer.com" />
+
+                    <Closebutton>
+                      <CloseIcon
+                        to="/"
+                        aria-label="Close alert"
+                        type="button"
+                        data-close
+                      >
+                        Close
+                      </CloseIcon>
+                    </Closebutton>
+                  </SearchWapper> */}
+                </SearchIconbutton>
               </NavBtnLink>
               <NavBtnLink>
                 <ShoppingCartIcon onClick={toggleCart} />

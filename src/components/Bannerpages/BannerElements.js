@@ -42,26 +42,31 @@ export const Heading1 = styled.h2`
   letter-spacing: 1px;
 `;
 
-export const BanLinks1 = styled.p`
-  position: absolute;
-  text-align: center;
-  color: #fff;
-  top: 21%;
-  width: 100%;
+export const BanText1 = styled.p`
   font-size: 17px;
   font-family: "RazerF5";
-  left: -9%;
+  line-height: normal;
+  padding: 0 1rem;
+  width: auto !important;
+
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
 `;
 
-export const BanLinks2 = styled.p`
-  position: absolute;
-  text-align: center;
-  color: #fff;
-  top: 21%;
-  width: 100%;
+export const BanText2 = styled.p`
   font-size: 17px;
   font-family: "RazerF5";
-  left: 7%;
+  font-weight: 300;
+  line-height: normal;
+  padding: 0 1rem;
+  width: auto !important;
+
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
 `;
 
 export const IconArrow = styled(MdKeyboardArrowRight)`
@@ -84,7 +89,6 @@ export const TopLine2 = styled.h1`
   color: #fff;
   top: 5%;
   width: 100%;
-
   font-size: 37px;
   font-family: "Roboto", sans-serif;
 
@@ -103,23 +107,38 @@ export const Heading2 = styled.h2`
   font-weight: 390;
   letter-spacing: 1px;
 `;
-export const BanLinks3 = styled.p`
+export const BanLinks = styled.div`
+  display: flex;
   position: absolute;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: center;
   text-align: center;
   color: #fff;
   width: 100%;
   top: 23%;
-  right: 110px;
-  font-size: 17px;
-  font-family: "RazerF5";
 `;
-export const BanLinks4 = styled.p`
-  position: absolute;
-  text-align: center;
-  color: #fff;
-  width: 100%;
-  top: 23%;
-  left: 100px;
+export const BanText3 = styled.p`
+  line-height: normal;
+  padding: 0 1rem;
+  width: auto !important;
   font-size: 17px;
   font-family: "RazerF5";
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+`;
+export const BanText4 = styled.p`
+  font-weight: 300;
+  line-height: normal;
+  padding: 0 1rem;
+  width: auto !important;
+  font-size: 17px;
+  font-family: "RazerF5";
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
 `;

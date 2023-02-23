@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   FooterContainer,
   FooterWrap,
@@ -28,6 +29,7 @@ const Footer = () => {
           <FooterLinkWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Shop</FooterLinkTitle>
+
               <FooterLink to="/">RazerStores</FooterLink>
               <FooterLink to="/">RazerCafe</FooterLink>
               <FooterLink to="/">Store Locator</FooterLink>

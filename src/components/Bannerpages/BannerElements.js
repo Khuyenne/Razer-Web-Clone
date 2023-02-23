@@ -6,6 +6,13 @@ export const BanContainer = styled.div`
   display: flex;
   overflow: hidden;
   margin: 0px;
+
+  @media only screen and (max-width: 46.1875em) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+  }
 `;
 export const ImgWrap1 = styled.div`
   position: relative;
@@ -14,8 +21,6 @@ export const ImgWrap1 = styled.div`
 export const Img1 = styled.img`
   width: 99%;
   height: 99%;
-
-  // margin-right: -10px;
 `;
 export const TopLine1 = styled.h1`
   position: absolute;
@@ -27,6 +32,10 @@ export const TopLine1 = styled.h1`
   font-family: "Roboto", sans-serif;
   font-weight: 550;
   letter-spacing: 1.4px;
+  @media only screen and (max-width: 46.1875em) {
+    font-size: 26px;
+    font-weight: 540;
+  }
 `;
 
 export const Heading1 = styled.h2`
@@ -40,6 +49,11 @@ export const Heading1 = styled.h2`
 
   font-weight: 390;
   letter-spacing: 1px;
+  @media only screen and (max-width: 46.1875em) {
+    font-size: 17px;
+    font-weight: 530;
+    top: 17%;
+  }
 `;
 
 export const BanText1 = styled.p`
@@ -52,6 +66,10 @@ export const BanText1 = styled.p`
   &:hover {
     color: #fff;
     text-decoration: underline;
+  }
+
+  @media only screen and (max-width: 46.1875em) {
+    top: 21%;
   }
 `;
 
@@ -66,6 +84,9 @@ export const BanText2 = styled.p`
   &:hover {
     color: #fff;
     text-decoration: underline;
+  }
+  @media only screen and (max-width: 46.1875em) {
+    top: 21%;
   }
 `;
 
@@ -94,6 +115,10 @@ export const TopLine2 = styled.h1`
 
   font-weight: 550;
   letter-spacing: 1.4px;
+  @media only screen and (max-width: 46.1875em) {
+    font-size: 26px;
+    font-weight: 540;
+  }
 `;
 export const Heading2 = styled.h2`
   position: absolute;
@@ -106,6 +131,10 @@ export const Heading2 = styled.h2`
 
   font-weight: 390;
   letter-spacing: 1px;
+  @media only screen and (max-width: 46.1875em) {
+    font-size: 18px;
+    top: 16%;
+  }
 `;
 export const BanLinks = styled.div`
   display: flex;

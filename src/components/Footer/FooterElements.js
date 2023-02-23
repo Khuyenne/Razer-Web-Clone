@@ -7,6 +7,9 @@ export const FooterContainer = styled.div`
   line-height: 24px;
   margin: 0px;
   width: 100%;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const FooterWrap = styled.div`
@@ -14,6 +17,12 @@ export const FooterWrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+;
+}
+  }
 `;
 
 export const FooterLinkItems = styled.div`
@@ -27,10 +36,8 @@ export const FooterLinkItems = styled.div`
   color: #fff;
 
   font-family: "Roboto";
-  @media screen and (max-width: 420px) {
-    margin: 0;
-    padding: 10px;
-    width: 100%;
+  @media screen and (max-width: 768px) {
+    flex-basis: unset;
   }
 `;
 export const FooterLinkContainer = styled.div`
@@ -51,6 +58,9 @@ export const FooterLinkWrapper = styled.div`
 export const FooterLinkTitle = styled.h1`
   font-size: 12px;
   margin-bottom: 16px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const FooterLink = styled(Link)`
@@ -137,3 +147,23 @@ export const FooterCounLink = styled(Link)`
 export const Arrowright = styled(MdKeyboardArrowRight)`
   margin-top: 0.3rem;
 `;
+
+export const CButton = styled.button`
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const CCollapse = styled.div`
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+export const CCard = styled.div`
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const CCardBody = styled.ul``;

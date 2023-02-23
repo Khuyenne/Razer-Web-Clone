@@ -36,8 +36,8 @@ export const TopLine = styled.h1`
   text-transform: uppercase;
   margin-bottom: 20px;
   @media screen and (max-width: 768px) {
-    top: 0%;
-    font-size: 21px;
+    top: 4%;
+    font-size: 23px;
   }
 `;
 
@@ -52,8 +52,8 @@ export const Heading = styled.h2`
   font-weight: 200;
   text-transform: uppercase;
   @media screen and (max-width: 768px) {
-    top: 8%;
-    font-size:  17px;
+    top: 11%;
+    font-size:  20px;
 `;
 
 export const InfoLinks = styled.p`
@@ -70,13 +70,15 @@ export const InfoLinks = styled.p`
     text-decoration: underline;
   }
   @media screen and (max-width: 768px) {
-    top: 12%;
+    top: 17%;
     font-size: 16px;
 `;
 
 export const ImgWrap = styled.div``;
 export const Img = styled.img`
   width: 100%;
+  @media only screen and (max-width: 46.1875em) {
+  }
 `;
 export const IconArrow = styled(MdKeyboardArrowRight)`
   color: #44d62c;

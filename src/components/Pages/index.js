@@ -9,6 +9,8 @@ import Homepages from "../Homepages";
 import Bannerpages from "../Bannerpages";
 import { homeObjFour, homeObjFive } from "../Bannerpages/Data";
 import Footer from "../Footer";
+import FooterMobile from "../FooterMobile";
+
 // import ShoppingCart from "../ShoppingCart";
 
 const Home = () => {
@@ -17,7 +19,13 @@ const Home = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
-
+  const [selected, setSelected] = useState(null);
+  const event = (i) => {
+    if (selected === i) {
+      return setSelected(null);
+    }
+    setSelected(i);
+  };
   return (
     <>
       <Navbar toggle={toggle} />
@@ -30,6 +38,7 @@ const Home = () => {
       <Bannerpages {...homeObjFour} />
       <Bannerpages {...homeObjFive} />
       <Footer />
+      <FooterMobile selected={selected} event={event} />
     </>
   );
 };

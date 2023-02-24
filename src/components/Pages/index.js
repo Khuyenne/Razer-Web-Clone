@@ -24,7 +24,7 @@ const Home = () => {
     if (selected === i) {
       return setSelected(null);
     }
-    setSelected(i);
+    setSelected(!selected);
   };
   return (
     <>

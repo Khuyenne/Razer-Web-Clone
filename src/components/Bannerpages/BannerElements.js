@@ -6,6 +6,13 @@ export const BanContainer = styled.div`
   display: flex;
   overflow: hidden;
   margin: 0px;
+
+  @media only screen and (max-width: 46.1875em) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+  }
 `;
 export const ImgWrap1 = styled.div`
   position: relative;
@@ -14,8 +21,6 @@ export const ImgWrap1 = styled.div`
 export const Img1 = styled.img`
   width: 99%;
   height: 99%;
-
-  // margin-right: -10px;
 `;
 export const TopLine1 = styled.h1`
   position: absolute;
@@ -27,6 +32,10 @@ export const TopLine1 = styled.h1`
   font-family: "Roboto", sans-serif;
   font-weight: 550;
   letter-spacing: 1.4px;
+  @media only screen and (max-width: 46.1875em) {
+    font-size: 26px;
+    font-weight: 540;
+  }
 `;
 
 export const Heading1 = styled.h2`
@@ -40,28 +49,45 @@ export const Heading1 = styled.h2`
 
   font-weight: 390;
   letter-spacing: 1px;
+  @media only screen and (max-width: 46.1875em) {
+    font-size: 17px;
+    font-weight: 530;
+    top: 17%;
+  }
 `;
 
-export const BanLinks1 = styled.p`
-  position: absolute;
-  text-align: center;
-  color: #fff;
-  top: 21%;
-  width: 100%;
+export const BanText1 = styled.p`
   font-size: 17px;
   font-family: "RazerF5";
-  left: -9%;
+  line-height: normal;
+  padding: 0 1rem;
+  width: auto !important;
+
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  @media only screen and (max-width: 46.1875em) {
+    top: 21%;
+  }
 `;
 
-export const BanLinks2 = styled.p`
-  position: absolute;
-  text-align: center;
-  color: #fff;
-  top: 21%;
-  width: 100%;
+export const BanText2 = styled.p`
   font-size: 17px;
   font-family: "RazerF5";
-  left: 7%;
+  font-weight: 300;
+  line-height: normal;
+  padding: 0 1rem;
+  width: auto !important;
+
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  @media only screen and (max-width: 46.1875em) {
+    top: 21%;
+  }
 `;
 
 export const IconArrow = styled(MdKeyboardArrowRight)`
@@ -84,12 +110,15 @@ export const TopLine2 = styled.h1`
   color: #fff;
   top: 5%;
   width: 100%;
-
   font-size: 37px;
   font-family: "Roboto", sans-serif;
 
   font-weight: 550;
   letter-spacing: 1.4px;
+  @media only screen and (max-width: 46.1875em) {
+    font-size: 26px;
+    font-weight: 540;
+  }
 `;
 export const Heading2 = styled.h2`
   position: absolute;
@@ -102,24 +131,43 @@ export const Heading2 = styled.h2`
 
   font-weight: 390;
   letter-spacing: 1px;
+  @media only screen and (max-width: 46.1875em) {
+    font-size: 18px;
+    top: 16%;
+  }
 `;
-export const BanLinks3 = styled.p`
+export const BanLinks = styled.div`
+  display: flex;
   position: absolute;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: center;
   text-align: center;
   color: #fff;
   width: 100%;
   top: 23%;
-  right: 110px;
-  font-size: 17px;
-  font-family: "RazerF5";
 `;
-export const BanLinks4 = styled.p`
-  position: absolute;
-  text-align: center;
-  color: #fff;
-  width: 100%;
-  top: 23%;
-  left: 100px;
+export const BanText3 = styled.p`
+  line-height: normal;
+  padding: 0 1rem;
+  width: auto !important;
   font-size: 17px;
   font-family: "RazerF5";
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+`;
+export const BanText4 = styled.p`
+  font-weight: 300;
+  line-height: normal;
+  padding: 0 1rem;
+  width: auto !important;
+  font-size: 17px;
+  font-family: "RazerF5";
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
 `;

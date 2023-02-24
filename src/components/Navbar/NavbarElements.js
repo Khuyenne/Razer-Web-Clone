@@ -163,7 +163,7 @@ export const SCWrapper = styled.div`
 `;
 
 export const SCtooltip = styled.div`
-  background: url(/bg-arrow-pointer-new.png);
+  background: url(https://www.razer.com/assets/images/icons/bg-arrow-pointer-new.png);
   background-repeat: no-repeat 50%;
   display: block;
   height: 15px;

@@ -219,6 +219,10 @@ text-align:left;
 
 .carousel-control-next, .carousel-control-prev{
     width: auto;
+    color: #44d62c;
+    
+  
+    
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon{
@@ -226,4 +230,5 @@ text-align:left;
     display:inline;
 font-size:42px;
 line-height:32px;
+
 }

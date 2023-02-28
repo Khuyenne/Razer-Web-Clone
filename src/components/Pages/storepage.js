@@ -11,6 +11,7 @@ import SecondStorePanel from "../../StorePage/SecondStorePanel";
 import MultiPanel from "../../StorePage/MultiPanel";
 import Footer from "../Footer";
 import WhyBuy from "../../StorePage/WhyBuy";
+import FooterMobile from "../FooterMobile";
 
 const StorePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +33,7 @@ const StorePage = () => {
       <MultiPanel />
       <WhyBuy />
       <Footer />
+      <FooterMobile />
     </>
   );
 };

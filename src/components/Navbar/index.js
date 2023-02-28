@@ -32,6 +32,7 @@ import {
   Rewardsicon,
   LogIcon,
 } from "./NavbarElements";
+import "./NavbarElements.css";
 
 const Navbar = ({ toggle }) => {
   // const [scrollNav, setScrollNav] = useState(false);
@@ -65,7 +66,7 @@ const Navbar = ({ toggle }) => {
             <HiOutlineBars2 />
           </MobileIcon1>
           <MobileIcon2>
-            <ShoppingCartIcon />
+            <ShoppingCartIcon onClick={toggleCart} />
           </MobileIcon2>
           <NavMenu>
             <NavItem>
@@ -94,71 +95,64 @@ const Navbar = ({ toggle }) => {
                 <NavNames to="pc">PC</NavNames>
               </NavLinks>
               <NavBtnLink>
-                <SearchIconbutton onClick={toggle}>
-                  {/* <SearchWapper id="search">
-                    <SearchInput type={"text"} placeholder="Search razer.com" />
-
-                    <Closebutton>
-                      <CloseIcon
-                        to="/"
-                        aria-label="Close alert"
-                        type="button"
-                        data-close
-                      >
-                        Close
-                      </CloseIcon>
-                    </Closebutton>
-                  </SearchWapper> */}
-                </SearchIconbutton>
+                <SearchIconbutton onClick={toggle}></SearchIconbutton>
               </NavBtnLink>
+
               <NavBtnLink>
-                <ShoppingCartIcon onClick={toggleCart} />
-                <ShoppingCartContainer isActive={isActive} onClick={toggleCart}>
-                  <SCWrapper>
-                    <SCtooltip></SCtooltip>
-                    <SCMessage>Your Cart is empty.</SCMessage>
-                    <SCul>
-                      <Scli>
-                        <SCCart to="cart">
-                          <Cartimg />
-                          Cart
-                        </SCCart>
-                      </Scli>
-                      <Scli>
-                        <SCOrd to="order">
-                          <Ordimg
-                            src="https://www.razer.com/assets/images/icons/orders_icon.svg"
-                            alt="ord"
-                            width={20}
-                            height={16}
-                          />
-                          Orders
-                        </SCOrd>
-                      </Scli>
-                      <Scli>
-                        <SCAcc to="account">
-                          <Accimg
-                            src="https://www.razer.com/assets/images/icons/account-icon.svg"
-                            alt="accou"
-                          />
-                          Account
-                        </SCAcc>
-                      </Scli>
-                      <Scli>
-                        <SCReward to="reward">
-                          <Rewardsicon />
-                          RazerStore Rewards
-                        </SCReward>
-                      </Scli>
-                      <Scli>
-                        <SCLogin to="login">
-                          <LogIcon />
-                          Log In
-                        </SCLogin>
-                      </Scli>
-                    </SCul>
-                  </SCWrapper>
-                </ShoppingCartContainer>
+                <div className="">
+                  <span className="user-dropdown-mask invisible"></span>
+                  <ShoppingCartIcon onClick={toggleCart} />
+
+                  <ShoppingCartContainer
+                    isActive={isActive}
+                    onClick={toggleCart}
+                  >
+                    <SCWrapper>
+                      <SCtooltip></SCtooltip>
+                      <SCMessage>Your Cart is empty.</SCMessage>
+                      <SCul>
+                        <Scli>
+                          <SCCart to="cart">
+                            <Cartimg />
+                            Cart
+                          </SCCart>
+                        </Scli>
+                        <Scli>
+                          <SCOrd to="order">
+                            <Ordimg
+                              src="https://www.razer.com/assets/images/icons/orders_icon.svg"
+                              alt="ord"
+                              width={20}
+                              height={16}
+                            />
+                            Orders
+                          </SCOrd>
+                        </Scli>
+                        <Scli>
+                          <SCAcc to="account">
+                            <Accimg
+                              src="https://www.razer.com/assets/images/icons/account-icon.svg"
+                              alt="accou"
+                            />
+                            Account
+                          </SCAcc>
+                        </Scli>
+                        <Scli>
+                          <SCReward to="reward">
+                            <Rewardsicon />
+                            RazerStore Rewards
+                          </SCReward>
+                        </Scli>
+                        <Scli>
+                          <SCLogin to="login">
+                            <LogIcon />
+                            Log In
+                          </SCLogin>
+                        </Scli>
+                      </SCul>
+                    </SCWrapper>
+                  </ShoppingCartContainer>
+                </div>
               </NavBtnLink>
             </NavItem>
           </NavMenu>

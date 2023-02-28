@@ -5,6 +5,7 @@ export const HomepageContainer = styled.div`
   width: 100%;
   height: 100%;
   background-color: #222222;
+  box-sizing: border-box;
 
   margin: 0px 0px 0px 0px;
 `;
@@ -77,7 +78,9 @@ export const InfoLinks = styled.p`
 export const ImgWrap = styled.div``;
 export const Img = styled.img`
   width: 100%;
-  @media only screen and (max-width: 46.1875em) {
+
+  @media screen and (max-width: 768px) {
+    background-image: url(//assets2.razerzone.com/images/pnx.assets/2d7c19fedce91a875fc6a861e251ad30/razer-blade-16-homepage-mobile2x.jpg);
   }
 `;
 export const IconArrow = styled(MdKeyboardArrowRight)`

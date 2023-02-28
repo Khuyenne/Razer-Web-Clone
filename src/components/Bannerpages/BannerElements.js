@@ -6,6 +6,7 @@ export const BanContainer = styled.div`
   display: flex;
   overflow: hidden;
   margin: 0px;
+  box-sizing: border-box;
 
   @media only screen and (max-width: 46.1875em) {
     display: block;

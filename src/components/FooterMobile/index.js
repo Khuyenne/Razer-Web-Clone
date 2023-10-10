@@ -72,6 +72,43 @@ function FooterMobile() {
             </div>
           </div>
         </div>
+        <hr />
+        <div className="bottomF">
+          <div className="rowF">
+            <div className="change-country">
+              <div className="country-placeholder">United States |</div>
+              <div className="location-change">Change Location {">"}</div>
+            </div>
+            <div className="icon-social">
+              <div className="slogan-gaming">FOR GAMERS. BY GAMERS.™ </div>
+
+              <a
+                className="icon-only"
+                href="/"
+                target="_blank"
+                arial-label="Facebook"
+              >
+                <img src="/iconsocial/facebook.svg" alt="fb" />
+              </a>
+              <a
+                className="icon-only"
+                href="/"
+                target="_blank"
+                arial-label="Instagram"
+              >
+                <img src="/iconsocial/instagram.svg" alt="insta" />
+              </a>
+              <a
+                className="icon-only"
+                href="/"
+                target="_blank"
+                arial-label="Twitter"
+              >
+                <img src="/iconsocial/twitter.svg" alt="twitter" />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

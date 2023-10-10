@@ -6,6 +6,7 @@ export const InfoContainer = styled.div`
   width: 100%;
   margin: 0px;
   height: 100%;
+  box-sizing: border-box;
   overflow: hidden;
 `;
 export const InfoWrapper = styled.span``;

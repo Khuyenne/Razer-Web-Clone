@@ -15,6 +15,7 @@ export const SearchbarContainer = styled.div`
   // padding: 0 375px;
   top: 20%;
   left: 20%;
+  box-sizing: border-box;
   background: #0d0d0d;
 
   top: 0;

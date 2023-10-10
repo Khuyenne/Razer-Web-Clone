@@ -7,6 +7,7 @@ export const FooterContainer = styled.div`
   line-height: 24px;
   margin: 0px;
   width: 100%;
+  box-sizing: border-box;
   @media screen and (max-width: 768px) {
     display: none;
   }

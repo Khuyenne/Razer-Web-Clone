@@ -1,147 +1,97 @@
-
 .contain{
     background-color: #000;
     display: block;
     box-sizing: border-box;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
 }
-
-.lines1{
+.header{
     padding-top: 30px;
     box-sizing: border-box;
 }
-.head1{
-    color: white;
-    margin-left: 45px;
-    font-size: 1.7rem;
+.lines{
+    font-size: 24px;
     font-weight: 700;
-    font-family: 'Roboto', sans-serif;
 }
-
-.paragraphs{
+.paragraph{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: -19px;
+}
+.paragraph, .lines{
     display: flex;
     color: white;
-    margin-left: 45px;
-    font-size: 18px;
-
+    margin-left: 11px;
+    
     font-family: 'Roboto', sans-serif;
 }
-
-.newa{
-    font-size: .875rem;
-    color: #eee;
-    text-decoration: none;
-    margin-left: auto;
-    margin-top: 10px;
-
-}
-
-.newa:hover{
-    text-decoration:underline;
-    color: white;
-}
-
-.screen-reader{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
-
 
 .cards-wrapper{
     display: flex;
     justify-content: center;
+    margin-left: 10px;
 }
-
 .card{
     margin: 0.5em;
     width: calc(100%/4.5);
-    background-color: #222;
-    gap: 1rem;
+    background-color: #222
 }
 .body-copy{
-    display: grid;
-    gap: 1rem;
     color: #eee;
     position: relative;
-    font: normal 1.125rem/1.5rem Roboto;
-
+    font: normal 1.125rem/1.5rem 'Roboto'
 }
-
-#product1{
+.product{
     color:#eeeeee;
     font-family: 'Roboto', sans-serif;
     font-size:18px;
     line-height:25px;
     font-weight: 400;
     text-align:left;
-    margin: 0;
-}
-
-.summary2{
-    color: #212529;
-    font-size: 2px;
-    margin-top: 5px;
 }
 .summary{
     color:#888888;
-    font-family:"Roboto";
+    font-family:'Roboto';
     font-size:14px;
     font-weight:300;
     line-height:18.2px;
     text-align:left;
 }
 
-.cta-contain{
+/* .cta-contain{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    align-content: flex-end;
     justify-content: space-between;
     align-items: flex-end;
-    box-sizing: border-box;
-    font: normal normal bold 14px/14px Roboto;
-    align-items: flex-end;
-
-    
-}
-
+    font: normal normal bold 14px/14px 'Roboto';
+} */
 .price{
     align-self: center;
- 
+    display: block;
 }
 
-.pricemoney{
-    
+.price-present{
+    margin-left: -120px;
+    margin-bottom: -40px;
     color: #eee;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
 }
 
-.savings{
-    text-decoration: line-through;
-    color: #999;
-}
-
-.butonbuy{
+.buton-buy{
     padding: 5px 10px;
     border-radius: 5px;
     color: #000;
     font-weight: 700;
     background-color: #44d62c;
     text-transform: uppercase;
-    
 }
 
-.genpnxblue{
-    background-color: #28aadc;
+
+#genpnxgreen{
+    background-color: #44d62c;
     font-size: 1rem;
     line-height: 1.5em;
     font-weight: 700;
@@ -154,7 +104,7 @@
     max-width: 100%;
 }
 
-.genpnxblue::before{
+#genpnxgreen::before{
     border-top-color: #065f82;
     border-left: 0.3125rem solid transparent;
     border-top: 0.3125rem solid #008900;
@@ -164,11 +114,10 @@
     left: 0;
     position: absolute;
     width: 0;
-
 }
-
-#laptopRazerB{
+#padmouse{
     max-width: 100%;
+    max-height: 100%;
     vertical-align: middle;
     border-style: none;
     box-sizing: border-box; 
@@ -176,9 +125,9 @@
     overflow: clip;
     background-color: #111;
 }
-#xboxcontroll{
+#laptop4090,#xboxgreen, #tshirtevisu, #paintsevisu, #hoodieevisu, #razeblade16, #chairfujin{
     max-width: 100%;
-
+    max-height: 100%;
     vertical-align: middle;
     border-style: none;
     box-sizing: border-box; 
@@ -186,8 +135,7 @@
     overflow: clip;
     background-color: #111;
 }
-
-.genpnxorange{
+.genpnxyellow{
     background-color: #ff9c07;
     font-size: 1rem;
     line-height: 1.5em;
@@ -199,10 +147,10 @@
     top: 20px;
     left: -10px;
     max-width: 100%;
+    display: block;
 
 }
-
-.genpnxorange::before{
+.genpnxyellow::before{
     border-left: 0.3125rem solid transparent;
     border-top: 0.3125rem solid #008900;
     bottom: -0.3125rem;
@@ -213,28 +161,3 @@
     width: 0;
 }
 
-#keyboardgamingX, #gamingchair, #tshirt, #pants, #keyboardrazer{
-    width: 100%;
-    vertical-align: middle;
-    border-style: none;
-    box-sizing: border-box; 
-    color: #44d62c;
-    overflow: clip;
-    background-color: #111;
-}
-
-.carousel-control-next, .carousel-control-prev{
-    width: auto;
-    color: #44d62c;
-    
-  
-    
-}
-
-.carousel-control-next-icon, .carousel-control-prev-icon{
-    color: #44d62c;
-    display:inline;
-    font-size:42px;
-    line-height:32px;
-
-}

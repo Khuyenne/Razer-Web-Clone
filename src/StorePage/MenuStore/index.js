@@ -7,12 +7,10 @@ import {
   NavItems,
   MenuLinks,
   MenuNavRowTop,
-  MenuSide,
   MenuText1,
   MenuText2,
-  SideLink,
-  IconArrow,
 } from "./MenuElements";
+import "./MenuStoreElements.css";
 
 const MenuStore = () => {
   return (
@@ -124,7 +122,7 @@ const MenuStore = () => {
             <MenuText1>THE LATEST AND GREATEST GAMING GEAR </MenuText1>
             <MenuText2>RAZE MICE, KEYBOARDS, HEADSETS, LAPTOP & MORE</MenuText2>
           </MenuHeading>
-          <MenuSide>
+          {/* <MenuSide>
             <img
               src="https:////assets2.razerzone.com/images/pnx.assets/8a4cf27b0557ec77704bd4de1d471a17/razerstore-icon.svg"
               alt="store"
@@ -134,7 +132,24 @@ const MenuStore = () => {
             <SideLink>
               Find a RazerStore near you <IconArrow />
             </SideLink>
-          </MenuSide>
+          </MenuSide> */}
+          <ul className="store-side-navigation-list" pnxssr_68="">
+            <li className="store-side-navigation-item" pnxssr_69="">
+              <a className="ig-store" href="/">
+                <div className="store-side-navigation-icon" pnxssr_71="">
+                  <img
+                    className="icon-razerstore"
+                    src="//assets2.razerzone.com/images/pnx.assets/8a4cf27b0557ec77704bd4de1d471a17/razerstore-icon.svg"
+                    alt=""
+                    pnxssr_72=""
+                  />
+                </div>
+                <div className="store-side-navigation-link">
+                  Find a RazerStore near you
+                </div>
+              </a>
+            </li>
+          </ul>
         </MenuNavRowTop>
       </MenuMain>
     </MenuContainer>

@@ -3,7 +3,7 @@ import Navbar from "../Navbar";
 import Searchbar from "../Searchbar";
 import Notification from "../Notificattion";
 import MenuStore from "../../StorePage/MenuStore";
-import NewProduct from "../../StorePage/NewProduct";
+// import NewProduct from "../../StorePage/NewProduct";
 import BannerStore from "../../StorePage/BannerStore";
 import StorePanel from "../../StorePage/StorePanel";
 import StoreEffect from "../../StorePage/StoreEffect";
@@ -12,6 +12,7 @@ import MultiPanel from "../../StorePage/MultiPanel";
 import Footer from "../Footer";
 import WhyBuy from "../../StorePage/WhyBuy";
 import FooterMobile from "../FooterMobile";
+import NewProductEffect from "../../StorePage/NewProductEffect";
 
 const StorePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,9 @@ const StorePage = () => {
       <Searchbar isOpen={isOpen} toggle={toggle} />
       <Notification />
       <MenuStore />
-      <NewProduct />
+
+      <NewProductEffect />
+
       <BannerStore />
       <StorePanel />
       <StoreEffect />

@@ -7,8 +7,8 @@ const StoreEffect = () => {
   return (
     <div className="contain">
       <Container>
-        <div className="lines">
-          <h2 className="head">RAZER EXCLUSIVES</h2>
+        <div className="lines1">
+          <h2 className="head1">RAZER EXCLUSIVES</h2>
           <div className="paragraphs">
             <p>
               Explore unique products only available at our official online
@@ -56,12 +56,12 @@ const StoreEffect = () => {
                         <p className="pricemoney">
                           <span>US$1,899.99</span>
                           <br />
-                          <span className="savings">
+                          {/* <span className="savings">
                             <del>US$1,999.99</del>
-                          </span>
+                          </span> */}
                         </p>
                       </div>
-                      <div className="butonbuy">Buy</div>
+                      <button className="butonbuy">Buy</button>
                     </div>
 
                     <div className="genpnxblue">5% off</div>
@@ -91,7 +91,7 @@ const StoreEffect = () => {
                           <span>US$199.99</span>
                         </p>
                       </div>
-                      <div className="butonbuy">Buy</div>
+                      <button className="butonbuy">Buy</button>
                     </div>
                     <div class="genpnxorange">EXCLUSIVE</div>
                   </div>
@@ -119,7 +119,7 @@ const StoreEffect = () => {
                           <span>US$219.99</span>
                         </p>
                       </div>
-                      <div className="butonbuy">Buy</div>
+                      <button className="butonbuy">Buy</button>
                     </div>
 
                     <div class="genpnxorange">EXCLUSIVE</div>
@@ -148,7 +148,7 @@ const StoreEffect = () => {
                           <span>US$199.99</span>
                         </p>
                       </div>
-                      <div className="butonbuy">Buy</div>
+                      <button className="butonbuy">Buy</button>
                     </div>
 
                     <div class="genpnxorange">EXCLUSIVE</div>
@@ -179,7 +179,7 @@ const StoreEffect = () => {
                           <span>US$1,299.00</span>
                         </p>
                       </div>
-                      <div className="butonbuy">Buy</div>
+                      <button className="butonbuy">Buy</button>
                     </div>
                     <div class="genpnxorange">GIFT WITH PURCHASE</div>
                   </div>
@@ -208,7 +208,7 @@ const StoreEffect = () => {
                           <span>US$1,299.00</span>
                         </p>
                       </div>
-                      <div className="butonbuy">Buy</div>
+                      <button className="butonbuy">Buy</button>
                     </div>
                     <div class="genpnxorange">GIFT WITH PURCHASE</div>
                   </div>
@@ -234,12 +234,12 @@ const StoreEffect = () => {
                         <p className="pricemoney">
                           <span>US$41.99</span>
                           <br />
-                          <span className="savings">
+                          {/* <span className="savings">
                             <del>US$59.99</del>
-                          </span>
+                          </span> */}
                         </p>
                       </div>
-                      <div className="butonbuy">Buy</div>
+                      <button className="butonbuy">Buy</button>
                     </div>
                     <div class="genpnxblue">30% off</div>
                   </div>
@@ -267,12 +267,12 @@ const StoreEffect = () => {
                         <p className="pricemoney">
                           <span>US$48.99</span>
                           <br />
-                          <span className="savings">
+                          {/* <span className="savings">
                             <del>US$69.99</del>
-                          </span>
+                          </span> */}
                         </p>
                       </div>
-                      <div className="butonbuy">Buy</div>
+                      <button className="butonbuy">Buy</button>
                     </div>
                     <div class="genpnxblue">30% off</div>
                   </div>

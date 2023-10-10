@@ -93,11 +93,13 @@
     line-height: 1.2em;
     text-transform: uppercase;
     display: block;
+    text-align: center;
     
 }
 
 .headingtext1{
     text-decoration: none;
+    
     background-color: transparent;
     color: #fff;
 }

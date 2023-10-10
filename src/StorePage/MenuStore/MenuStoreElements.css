@@ -1,0 +1,57 @@
+.store-side-navigation-list{
+    font: normal normal normal 14px/17px Roboto, sans-serif;
+    color: #EEEEEE;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    flex: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.store-side-navigation-item{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: 0rem;
+    max-width: 190px;
+    text-align: -webkit-match-parent;
+    box-sizing: border-box;
+}
+
+.ig-store{
+    
+    font: normal normal normal 14px/17px Roboto, sans-serif;
+    color: #EEEEEE !important;
+    position: relative;
+}
+
+.store-side-navigation-icon{
+    display:block;
+}
+.icon-razerstore{
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+    border-style: none;
+    margin-left: -25px;
+    margin-bottom: -40px;
+   
+}
+
+.store-side-navigation-link{
+    padding: 0 0.5rem;
+    display: block;
+    text-decoration: none;
+}
+.store-side-navigation-link::after{
+    content: ">";
+    display: inline-block;
+    margin: 0 0.25rem;
+    color: #44D62C;
+    text-decoration: none;
+}

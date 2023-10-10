@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai";
 import { CgShoppingCart } from "react-icons/cg";
-import { RiVipDiamondLine } from "react-icons/ri";
-import { MdLogin } from "react-icons/md";
+// import { RiVipDiamondLine } from "react-icons/ri";
+// import { MdLogin } from "react-icons/md";
 // import { AiOutlineClose } from "react-icons/ai";
 // import { Link as LinkS } from "react-scroll";
 
@@ -141,174 +141,174 @@ export const ShoppingCartIcon = styled(CgShoppingCart)`
   }
 `;
 
-export const ShoppingCartContainer = styled.div`
-  display: flex;
-  position: fixed;
+// export const ShoppingCartContainer = styled.div`
+//   display: flex;
+//   position: fixed;
 
-  left: 81%;
-  opacity: ${({ isActive }) => (isActive ? "100%" : "0")};
-  // width: ${({ isActive }) => (isActive ? "0" : "10%")};
-`;
+//   left: 81%;
+//   opacity: ${({ isActive }) => (isActive ? "100%" : "0")};
+//   // // width: ${({ isActive }) => (isActive ? "0" : "10%")};
+// `;
 
-export const SCWrapper = styled.div`
-  background: #222;
-  border: 2px solid #555;
-  border-radius: 0.625rem;
-  left: auto;
-  margin: 0 0.175rem;
-  max-width: 18rem;
-  min-width: 18rem;
-  position: absolute;
-  right: -1rem;
-  top: -5px;
-  z-index: 2;
-`;
+// export const SCWrapper = styled.div`
+//   background: #222;
+//   border: 2px solid #555;
+//   border-radius: 0.625rem;
+//   left: auto;
+//   margin: 0 0.175rem;
+//   max-width: 18rem;
+//   min-width: 18rem;
+//   position: absolute;
+//   right: -1rem;
+//   top: -5px;
+//   z-index: 2;
+// `;
 
-export const SCtooltip = styled.div`
-  background: url(https://www.razer.com/assets/images/icons/bg-arrow-pointer-new.png);
-  background-repeat: no-repeat 50%;
-  display: block;
-  height: 15px;
-  position: absolute;
-  right: 1.2rem;
-  top: -15px;
-  width: 28px;
-`;
+// export const SCtooltip = styled.div`
+//   background: url(https://www.razer.com/assets/images/icons/bg-arrow-pointer-new.png);
+//   background-repeat: no-repeat 50%;
+//   display: block;
+//   height: 15px;
+//   position: absolute;
+//   right: 1.2rem;
+//   top: -15px;
+//   width: 28px;
+// `;
 
-export const SCMessage = styled.div`
-  border-bottom: 1px solid #555;
-  color: #888;
-  font-family: Roboto, sans-serif;
-  font-size: 0.875rem;
-  margin: 0 1.25rem;
-  padding: 1.5rem 0;
-  text-align: center;
-  box-sizing: border-box;
-`;
+// export const SCMessage = styled.div`
+//   border-bottom: 1px solid #555;
+//   color: #888;
+//   font-family: Roboto, sans-serif;
+//   font-size: 0.875rem;
+//   margin: 0 1.25rem;
+//   padding: 1.5rem 0;
+//   text-align: center;
+//   box-sizing: border-box;
+// `;
 
-export const SCul = styled.ul`
-  margin: 0.1rem 0;
-  padding: 0 1.25rem;
-  list-style: none;
-`;
+// export const SCul = styled.ul`
+//   margin: 0.1rem 0;
+//   padding: 0 1.25rem;
+//   list-style: none;
+// `;
 
-export const Scli = styled.li`
-  display: flex;
-  border-top: 0 solid transparent;
-  border-bottom: 1px solid #555;
-  font-family: RazerF5;
-  font-size: 14px;
-  font-weight: 300;
-  justify-content: flex-start;
-  line-height: 21px;
-  padding: 8.4px 0px 3.2px;
-  text-align: left;
-`;
+// export const Scli = styled.li`
+//   display: flex;
+//   border-top: 0 solid transparent;
+//   border-bottom: 1px solid #555;
+//   font-family: RazerF5;
+//   font-size: 14px;
+//   font-weight: 300;
+//   justify-content: flex-start;
+//   line-height: 21px;
+//   padding: 8.4px 0px 3.2px;
+//   text-align: left;
+// `;
 
-export const SCCart = styled.div`
-  display: flex;
-  color: #fff;
-  cursor: pointer;
-  padding: 5px;
-  font-size: 0.875rem;
-  text-decoration: none;
+// export const SCCart = styled.div`
+//   display: flex;
+//   color: #fff;
+//   cursor: pointer;
+//   padding: 5px;
+//   font-size: 0.875rem;
+//   text-decoration: none;
 
-  &:hover {
-    filter: invert(10%) sepia(64%) saturate(640%) hue-rotate(54deg) brightness(89%) contrast(88%);
-`;
+//   &:hover {
+//     filter: invert(10%) sepia(64%) saturate(640%) hue-rotate(54deg) brightness(89%) contrast(88%);
+// `;
 
-export const SCOrd = styled.div`
-  display: flex;
-  color: #fff;
-  cursor: pointer;
-  padding: 5px;
-  font-size: 0.875rem;
-  text-decoration: none;
+// export const SCOrd = styled.div`
+//   display: flex;
+//   color: #fff;
+//   cursor: pointer;
+//   padding: 5px;
+//   font-size: 0.875rem;
+//   text-decoration: none;
 
-  &:hover {
-    filter: invert(10%) sepia(64%) saturate(640%) hue-rotate(54deg) brightness(89%) contrast(88%);
-`;
+//   &:hover {
+//     filter: invert(10%) sepia(64%) saturate(640%) hue-rotate(54deg) brightness(89%) contrast(88%);
+// `;
 
-export const SCAcc = styled.div`
-  display: flex;
-  color: #fff;
-  cursor: pointer;
-  padding: 5px;
-  font-size: 0.875rem;
-  text-decoration: none;
+// export const SCAcc = styled.div`
+//   display: flex;
+//   color: #fff;
+//   cursor: pointer;
+//   padding: 5px;
+//   font-size: 0.875rem;
+//   text-decoration: none;
 
-  &:hover {
-    filter: invert(10%) sepia(64%) saturate(640%) hue-rotate(54deg) brightness(89%) contrast(88%);
-`;
+//   &:hover {
+//     filter: invert(10%) sepia(64%) saturate(640%) hue-rotate(54deg) brightness(89%) contrast(88%);
+// `;
 
-export const SCReward = styled.div`
-display: flex;
-  color: #fff;
-  cursor: pointer;
-  padding: 5px;
-  font-size: 0.875rem;
-  text-decoration: none;
+// export const SCReward = styled.div`
+// display: flex;
+//   color: #fff;
+//   cursor: pointer;
+//   padding: 5px;
+//   font-size: 0.875rem;
+//   text-decoration: none;
 
-  &:hover {
-    filter: invert(10%) sepia(64%) saturate(640%) hue-rotate(54deg) brightness(89%) contrast(88%);`;
+//   &:hover {
+//     filter: invert(10%) sepia(64%) saturate(640%) hue-rotate(54deg) brightness(89%) contrast(88%);`;
 
-export const SCLogin = styled.div`
-display: flex;
-  color: #fff;
-  cursor: pointer;
-  padding: 5px;
-  font-size: 0.875rem;
-  text-decoration: none;
+// export const SCLogin = styled.div`
+// display: flex;
+//   color: #fff;
+//   cursor: pointer;
+//   padding: 5px;
+//   font-size: 0.875rem;
+//   text-decoration: none;
 
-  &:hover {
-    filter: invert(10%) sepia(64%) saturate(640%) hue-rotate(54deg) brightness(89%) contrast(88%);`;
+//   &:hover {
+//     filter: invert(10%) sepia(64%) saturate(640%) hue-rotate(54deg) brightness(89%) contrast(88%);`;
 
-export const Cartimg = styled(CgShoppingCart)`
-  display: inline-flex;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 21px;
-  padding: 0px 10px 0px 0px;
-  text-align: left;
-  &:hover {
-    color: #44d62c;
-  }
-`;
+// export const Cartimg = styled(CgShoppingCart)`
+//   display: inline-flex;
+//   font-size: 20px;
+//   font-weight: 300;
+//   line-height: 21px;
+//   padding: 0px 10px 0px 0px;
+//   text-align: left;
+//   &:hover {
+//     color: #44d62c;
+//   }
+// `;
 
-export const Ordimg = styled.img`
-  display: inline-flex;
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 21px;
-  padding: 0px 10px 0px 0px;
-  text-align: left;
-  &:hover {
-    filter: invert(10%) sepia(64%) saturate(640%) hue-rotate(54deg) brightness(89%) contrast(88%);
-`;
+// export const Ordimg = styled.img`
+//   display: inline-flex;
+//   font-size: 20px;
+//   font-weight: 200;
+//   line-height: 21px;
+//   padding: 0px 10px 0px 0px;
+//   text-align: left;
+//   &:hover {
+//     filter: invert(10%) sepia(64%) saturate(640%) hue-rotate(54deg) brightness(89%) contrast(88%);
+// `;
 
-export const Accimg = styled.img`
-  display: inline-flex;
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 21px;
-  padding: 0px 10px 0px 0px;
-  text-align: left;
-`;
+// export const Accimg = styled.img`
+//   display: inline-flex;
+//   font-size: 20px;
+//   font-weight: 200;
+//   line-height: 21px;
+//   padding: 0px 10px 0px 0px;
+//   text-align: left;
+// `;
 
-export const Rewardsicon = styled(RiVipDiamondLine)`
-  display: inline-flex;
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 21px;
-  padding: 0px 10px 0px 0px;
-  text-align: left;
-`;
+// export const Rewardsicon = styled(RiVipDiamondLine)`
+//   display: inline-flex;
+//   font-size: 20px;
+//   font-weight: 200;
+//   line-height: 21px;
+//   padding: 0px 10px 0px 0px;
+//   text-align: left;
+// `;
 
-export const LogIcon = styled(MdLogin)`
-  display: inline-flex;
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 21px;
-  padding: 0px 10px 0px 0px;
-  text-align: left;
-`;
+// export const LogIcon = styled(MdLogin)`
+//   display: inline-flex;
+//   font-size: 20px;
+//   font-weight: 200;
+//   line-height: 21px;
+//   padding: 0px 10px 0px 0px;
+//   text-align: left;
+// `;

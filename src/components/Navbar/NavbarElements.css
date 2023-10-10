@@ -6,11 +6,119 @@
     right: 0;
     top: 0;
     z-index: 1;
+} */
+
+/* .visible {
+    visibility: visible!important
 }
 
-.invisible{
-    visibility: visible;
+.invisible {
+    visibility: hidden!important
 }
-.invisible:hover{
-    visibility: hidden;
-} */
+ 
+  .shoppingbar{
+    position: relative;
+ } */
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    position: absolute;
+    font-size: 16px;
+    border: none;
+    padding: 0 10px 18px 10px;
+    margin: -2.55rem 0 0 -4.2rem;
+
+ }
+ .dropdown {
+    position: relative;
+    display: inline-block;
+    
+ }
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    background: #222;
+    border: 2px solid #555;
+    border-radius: 0.625rem;
+    left: auto;
+    margin: -0.5rem 0.175rem;
+    max-width: 18rem;
+    min-width: 18rem;
+    position: absolute;
+    right: 0.8rem;
+    top: -4px;
+    z-index: 2;
+ }
+
+ .dropdown-content a:hover {background-color: #ddd;}
+ .dropdown:hover .dropdown-content {
+    display: block;
+ }
+ /* .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+ } */
+ .messageS{
+    border-bottom: 1px solid #555;
+    color: #888;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    margin: 0 1.25rem;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-sizing: border-box;
+ }
+ .ulS{
+    margin: 0.1rem 0;
+    padding: 0 1.25rem;
+    list-style: none;
+ }
+
+ .icongrey{
+    color: #888;
+ }
+
+ .liS{
+    display: flex;
+  border-top: 0 solid transparent;
+  border-bottom: 1px solid #555;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  justify-content: flex-start;
+  line-height: 21px;
+  padding: 8.4px 0px 3.2px;
+  text-align: left;
+ }
+
+ .cartS, .orderS, .accountS, .reward, .loginS{
+    display: flex;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 0.875rem;
+  text-decoration: none;
+  
+ }
+
+ .cartS:hover, .orderS:hover, .accountS:hover, .reward:hover, .loginS:hover{
+    filter: invert(10%) sepia(64%) saturate(640%) hue-rotate(54deg) brightness(89%) contrast(88%);
+ }
+ .toolTip{
+    background: url(https://www.razer.com/assets/images/icons/bg-arrow-pointer-new.png);
+  background-repeat: no-repeat 50%;
+  display: block;
+  height: 15px;
+  position: absolute;
+  right: 1.2rem;
+  top: -15px;
+  width: 28px;
+ }
+ .iconSC{
+    display: inline-flex;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 21px;
+    padding: 0px 10px 0px 0px;
+    text-align: left;
+ }

@@ -6,7 +6,7 @@ export const NotiContainer = styled.div`
   align-items: center;
   color: #999999;
   justify-content: center;
-  line-height: 20px;
+  line-height: 10px;
   margin: 0px;
   @media screen and (max-width: 768px) {
     line-height: 10px;
